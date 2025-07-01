@@ -1,0 +1,9 @@
+@use 'variables' as *;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $ff-display;
+}

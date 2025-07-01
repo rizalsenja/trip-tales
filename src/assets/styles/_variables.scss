@@ -1,0 +1,86 @@
+/* COLORS */
+$typography-50: #f6f7f9;
+$typography-100: #ecedf2;
+$typography-200: #d5d8e2;
+$typography-300: #b0b5c9;
+$typography-400: #858dab;
+$typography-500: #667091;
+$typography-600: #515978;
+$typography-700: #424862;
+$typography-800: #3a3f52;
+$typography-900: #333747;
+$typography-950: #282a37;
+
+$blue-50: #eef7ff;
+$blue-100: #d9edff;
+$blue-200: #bce0ff;
+$blue-300: #8ecdff;
+$blue-400: #59b0ff;
+$blue-500: #308eff;
+$blue-600: #1b6ff5;
+$blue-700: #1459e1;
+$blue-800: #1748b6;
+$blue-900: #19408f;
+$blue-950: #142857;
+
+$green-50: #efffe4;
+$green-100: #d9ffc4;
+$green-200: #b7ff91;
+$green-300: #86ff51;
+$green-400: #69fe31;
+$green-500: #39e500;
+$green-600: #29b700;
+$green-700: #1f8b00;
+$green-800: #1c6d07;
+$green-900: #1b5c0b;
+$green-950: #083400;
+
+$red-50: #fff1f1;
+$red-100: #ffe0e0;
+$red-200: #ffc5c5;
+$red-300: #ff9d9d;
+$red-400: #ff6565;
+$red-500: #fe3e3e;
+$red-600: #ec1616;
+$red-700: #c70e0e;
+$red-800: #a41010;
+$red-900: #881414;
+$red-950: #4a0505;
+
+$white: #FFFFFF;
+$black: #000000;
+$green: $green-500;
+$primary: $green;
+
+
+/* FONTS */
+$ff-display: 'DM Sans UI Text', sans-serif;
+
+
+/* BREAKPOINTS */
+$xs: 390px;
+$xs-max: 389.98px;
+
+$sm: 576px;
+$sm-max: 575.98px;
+
+$md: 768px;
+$md-max: 767.98px;
+
+$lg: 1024px;
+$lg-max: 1023.98px;
+
+$xl: 1440px;
+$xl-max: 1439.98px;
+
+$xxl: 1600px;
+$xxl-max: 1599.98px;
+
+$breakpoints: (
+    xs: $xs,
+    sm: $sm,
+    md: $md,
+    lg: $lg,
+    xl: $xl,
+    xxl: $xxl,
+);
