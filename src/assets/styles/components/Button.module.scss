@@ -1,15 +1,20 @@
 @use "@scss/globals" as *;
+
+.button {
+    @include font-style(description-2, medium);
+}
+
 // SIZES
 .sm {
-    padding: 4px 2rem;
+    padding: 4px 32px;
 }
 
 .md {
-    padding: 8px 2rem;
+    padding: 8px 32px;
 }
 
 .xl {
-    padding: 10px 2rem;
+    padding: 10px 32px;
 }
 
 // VARIANTS

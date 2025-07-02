@@ -15,22 +15,23 @@ const Navbar = () => {
 	return (
         <nav className={styles.navbar}>
             <div className={styles.navbar__container}>
-                <img src={logo} alt="Trip Tales Logo" />
+                <div className={styles.navbar__logo}>
+                    <img src={logo} alt="Trip Tales Logo" />
+                </div>
 
-                {/* <div className={styles.navbar__links}> */}
-                    <ul className={styles.navbar__links}>
-                        {links.map(link => (
-                            <li key={link.id}>
-                                <NavLink to={link.url}> {/* className={({ isActive }) => (isActive ? 'active' : '')} */}
-                                    {link.text}
-                                </NavLink>
-                            </li>
-                        ))}
-                    </ul>
-                {/* </div> */}
+                <ul className={styles.navbar__links}>
+                    {links.map(link => (
+                        <li key={link.id}>
+                            <NavLink to={link.url}> {/* className={({ isActive }) => (isActive ? 'active' : '')} */}
+                                {link.text}
+                            </NavLink>
+                        </li>
+                    ))}
+                </ul>
 
                 <div className={styles.navbar__buttons}>
-                    <Button label='Sign In' size='xl' variant='link' color='red' />
+                    <Button label='Sign Up' size='xl' variant='filled' color='secondary' />
+                    <Button label='Log In' size='xl' variant='filled' color='primary' />
                 </div>
             </div>
         </nav>

@@ -1,3 +1,5 @@
+@use "sass:map";
+
 @font-face {
     font-family: "DM Sans UI Text";
     src: url("../fonts/DMSans-Regular.woff2") format("woff2");
@@ -24,4 +26,41 @@
     src: url("../fonts/DMSans-Bold.woff2") format("woff2");
     font-weight: 700;
     font-style: normal;
+}
+
+$font-family: 'DM Sans UI Text', sans-serif;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+$font-sizes: (
+    heading-1: (font-size: 32px, line-height: 40px, letter-spacing: -0.02em),
+    heading-2: (font-size: 28px, line-height: 36px, letter-spacing: 0.01em),
+    heading-3: (font-size: 24px, line-height: 32px, letter-spacing: 0.01em),
+    heading-4: (font-size: 20px, line-height: 28px, letter-spacing: 0.01em),
+    heading-5: (font-size: 18px, line-height: 26px, letter-spacing: 0.01em),
+    description-1: (font-size: 16px, line-height: 24px, letter-spacing: 0.01em),
+    description-2: (font-size: 14px, line-height: 22px, letter-spacing: 0.01em),
+    description-3: (font-size: 12px, line-height: 20px, letter-spacing: 0.01em),
+);
+
+@mixin font-style($key, $weight: regular) {
+    $data: map.get($font-sizes, $key);
+
+    font-size: map.get($data, font-size);
+    line-height: map.get($data, line-height);
+    letter-spacing: map.get($data, letter-spacing);
+    font-family: $font-family;
+
+    @if $weight == medium {
+        font-weight: $font-weight-medium;
+    } @else if $weight == semibold {
+        font-weight: $font-weight-semibold;
+    } @else if $weight == bold {
+        font-weight: $font-weight-bold;
+    } @else {
+        font-weight: $font-weight-regular;
+    }
 }

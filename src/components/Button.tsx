@@ -17,8 +17,8 @@ const Button: React.FC<ButtonProps> = ({
 	disabled = false,
 }) => {
 	return (
-		<button className={`${styles[variant]} ${styles[size]} ${styles[color]}`} disabled={disabled}>
-			{label}
+		<button className={`${styles.button} ${styles[variant]} ${styles[size]} ${styles[color]}`} disabled={disabled}>
+        {label}
 		</button>
 	);
 };
