@@ -1,0 +1,38 @@
+@use '@scss/globals' as *;
+
+.navbar {
+    border-radius: 80px;
+    background-color: $white;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 12px 12px 24px;
+    }
+
+    &__links {
+        display: flex;
+        gap: 32px;
+        list-style: none;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 8px;
+    }
+
+    &__button {
+        padding: 10px 32px;
+        outline: none;
+
+        &--ghost {
+            background-color: $grey-100;
+        }
+
+        &--filled {
+            background-color: $green-200;
+            color: $green-950;
+        }
+    }
+}
