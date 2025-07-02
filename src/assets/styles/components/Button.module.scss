@@ -1,0 +1,251 @@
+@use "@scss/globals" as *;
+// SIZES
+.sm {
+    padding: 4px 2rem;
+}
+
+.md {
+    padding: 8px 2rem;
+}
+
+.xl {
+    padding: 10px 2rem;
+}
+
+// VARIANTS
+.filled {
+    border-radius: 100px;
+    background: var(--btn-bg-filled);
+    color: var(--btn-color-filled);
+    border: none;
+
+    &:focus-visible:not(:disabled) {
+        box-shadow: 0px 0px 0px 2px var(--btn-filled-focused);
+    }
+
+    &:hover:not(:disabled) {
+        background-color: var(--btn-filled-hovered);
+    }
+
+    &:active:not(:disabled) {
+        background-color: var(--btn-filled-pressed);
+    }
+
+    &:disabled {
+        background-color: var(--btn-bg-filled-disabled);
+        color: var(--btn-color-filled-disabled);
+    }
+}
+
+.outline {
+    border-radius: 100px;
+    background: transparent;
+    color: var(--btn-color-outline);
+    border: 1px solid var(--btn-border-outline);
+
+    &:focus-visible:not(:disabled) {
+        color: var(--btn-color-outline-focused);
+        border: 1px solid var(--btn-border-outline-focused);
+        box-shadow: 0px 0px 0px 2px var(--btn-shadow-outline-focused);
+    }
+
+    &:hover:not(:disabled) {
+        background: var(--btn-bg-outline-hovered);
+        color: var(--btn-color-outline-hovered);
+        border: 1px solid var(--btn-border-outline-hovered);
+    }
+
+    &:active:not(:disabled) {
+        color: var(--btn-color-outline-pressed);
+        border: 1px solid var(--btn-border-outline-pressed);
+        background: transparent;
+    }
+
+    &:disabled {
+        color: var(--btn-color-outline-disabled);
+        border: 1px solid var(--btn-border-outline-disabled);
+    }
+}
+
+.text {
+    border-radius: 100px;
+    background: transparent;
+    color: var(--btn-color-text);
+
+    &:focus-visible:not(:disabled) {
+        box-shadow: 0px 0px 0px 2px var(--btn-text-focused);
+    }
+
+    &:hover:not(:disabled) {
+        background-color: var(--btn-text-hovered);
+    }
+
+    &:active:not(:disabled) {
+        color: var(--btn-text-pressed);
+        background-color: var(--btn-bg-text-pressed);
+    }
+
+    &:disabled {
+        color: var(--btn-color-text-disabled);
+    }
+}
+
+.link {
+    border-radius: 100px;
+    background: transparent;
+    color: var(--btn-color-link);
+    text-decoration: underline;
+
+    &:focus-visible:not(:disabled) {
+        box-shadow: 0px 0px 0px 2px var(--btn-link-focused);
+    }
+
+    &:hover:not(:disabled) {
+        background-color: var(--btn-link-hovered);
+    }
+
+    &:active:not(:disabled) {
+        color: var(--btn-color-link-pressed);
+        background-color: var(--btn-bg-text-pressed);
+    }
+
+    &:disabled {
+        color: var(--btn-color-link-disabled);
+    }
+}
+
+// COLORS
+.primary {
+    --btn-bg-filled: #{$green-200};
+    --btn-color-filled: #{$green-950};
+
+    --btn-color-outline: #{$green-600};
+    --btn-border-outline: #{$green-600};
+
+    --btn-color-text: #{$green-950};
+
+    --btn-color-link: #{$green-950};
+
+    // FILLED
+    --btn-filled-focused: #5FE823;
+    --btn-filled-hovered: #{$green-300};
+    --btn-filled-pressed: #{$green-500};
+    --btn-bg-filled-disabled: #{$green-200};
+    --btn-color-filled-disabled: #{$green-500};
+
+    // OUTLINE
+    --btn-color-outline-focused: #{$green-950};
+    --btn-border-outline-focused: #{$green-200};
+    // --btn-bg-outline-hovered: transparent;
+    --btn-color-outline-hovered: #{$green-950};
+    --btn-border-outline-hovered: #{$green-300};
+    --btn-color-outline-pressed: #{$green-950};
+    --btn-border-outline-pressed: #{$green-500};
+    --btn-color-outline-disabled: #{$green-600};
+    --btn-border-outline-disabled: #{$green-200};
+
+    // TEXT
+    --btn-text-focused: #5FE823;
+    // --btn-text-hovered: #{$green-800};
+    --btn-text-pressed: #{$green-950};
+    --btn-color-text-disabled: #{$green-600};
+
+    // LINK
+    --btn-link-focused: #5FE823;
+    // --btn-link-hovered: #{$green-800};
+    --btn-link-pressed: #{$green-950};
+    --btn-color-link-disabled: #{$green-600};
+}
+
+.secondary {
+    --btn-bg-filled: #{$grey-100};
+    --btn-color-filled: #{$grey-950};
+
+    --btn-color-outline: #{$grey-950};
+    --btn-border-outline: #{$grey-100};
+
+    --btn-color-text: #{$grey-950};
+
+    --btn-color-link: #{$grey-950};
+
+    // FILLED
+    --btn-filled-focused: #DCDFEB;
+    --btn-filled-hovered: #{$grey-200};
+    --btn-filled-pressed: #{$grey-300};
+    --btn-bg-filled-disabled: #{$grey-100};
+    --btn-color-filled-disabled: #{$grey-300};
+
+    // OUTLINE
+    --btn-color-outline-focused: #{$grey-950};
+    --btn-border-outline-focused: #{$grey-100};
+    --btn-bg-outline-hovered: #{$grey-50};
+    --btn-color-outline-hovered: #{$grey-950};
+    --btn-border-outline-hovered: #{$grey-200};
+    --btn-color-outline-pressed: #{$grey-950};
+    --btn-border-outline-pressed: #{$grey-300};
+    --btn-color-outline-disabled: #{$grey-300};
+    --btn-border-outline-disabled: #{$grey-100};
+
+    // TEXT
+    --btn-text-focused: #DCDFEB;
+    // INI 1
+    --btn-text-hovered: #{$grey-50};
+    --btn-text-pressed: #{$grey-950};
+    --btn-bg-text-pressed: transparent;
+    --btn-color-text-disabled: #{$grey-300};
+
+    // LINK
+    --btn-link-focused: #DCDFEB;
+    // INI 2
+    --btn-link-hovered: #{$grey-50};
+    --btn-link-pressed: #{$grey-950};
+    --btn-bg-link-pressed: transparent;
+    --btn-color-link-disabled: #{$grey-300};
+}
+
+
+.red {
+    --btn-bg-filled: #{$red-600};
+    --btn-color-filled: #{$white};
+
+    --btn-color-outline: #{$red-600};
+    --btn-border-outline: #{$red-600};
+
+    --btn-color-text: #{$red-600};
+
+    --btn-color-link: #{$red-600};
+
+    // FILLED
+    --btn-filled-focused: #FFACAC;
+    --btn-filled-hovered: #{$red-700};
+    --btn-filled-pressed: #{$red-800};
+    --btn-bg-filled-disabled: #{$red-100};
+    --btn-color-filled-disabled: #{$red-300};
+
+    // OUTLINE
+    --btn-color-outline-focused: #{$red-600};
+    --btn-border-outline-focused: #{$red-600};
+    --btn-shadow-outline-focused: #FFACAC;
+    --btn-bg-outline-hovered: #{$red-50};
+    --btn-color-outline-hovered: #{$red-700};
+    --btn-border-outline-hovered: #{$red-700};
+    --btn-color-outline-pressed: #{$red-800};
+    --btn-border-outline-pressed: #{$red-800};
+    --btn-color-outline-disabled: #{$red-300};
+    --btn-border-outline-disabled: #{$red-100};
+
+    // TEXT
+    --btn-text-focused: #FFACAC;
+    // INI 3
+    --btn-text-hovered: #{$red-50};
+    --btn-text-pressed: #{$red-800};
+    --btn-color-text-disabled: #{$red-300};
+
+    // LINK
+    --btn-link-focused: #FFACAC;
+    // INI 4
+    --btn-link-hovered: #{$red-50};
+    --btn-color-link-hovered: #{$red-700};
+    --btn-color-link-pressed: #{$red-800};
+    --btn-color-link-disabled: #{$red-300};
+}
