@@ -5,5 +5,19 @@ html {
 }
 
 body {
+    min-width: 390px;
+    font-family: $ff-display;
+}
+
+a {
+    color: $grey-950;
+    text-decoration: none;
+}
+
+a,
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
     font-family: $ff-display;
 }
