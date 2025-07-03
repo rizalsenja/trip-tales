@@ -8,7 +8,7 @@ import Footer from './components/footer/Footer';
 function App() {
   return (
     <React.Fragment>
-      <Navbar />
+      {/* <Navbar /> */}
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>

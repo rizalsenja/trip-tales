@@ -11,7 +11,6 @@ const Home = () => {
 			<Ultimate/>
 			<About/>
 			<Faq />
-			
 		</>
 	)
 }
