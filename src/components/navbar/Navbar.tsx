@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
-import logo from '../assets/icons/main-logo.webp'
-import styles from '../assets/styles/components/Navbar.module.scss';
-import Button from './Button';
+import logo from '../../assets/icons/main-logo.webp'
+import styles from './Navbar.module.scss';
+import Button from '../ui/Button.tsx/Button';
 
 
 const links = [

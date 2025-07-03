@@ -1,12 +1,12 @@
-import styles from '../assets/styles/components/Footer.module.scss';
-import logo from '../assets/icons/main-logo.webp'
-import appStoreLogo from '../assets/icons/app_store-logo.webp';
-import googlePlayLogo from '../assets/icons/google_play-logo.webp';
-import facebookLogo from '../assets/icons/facebook-logo.webp';
-import instagramLogo from '../assets/icons/instagram-logo.webp';
-import tiktokLogo from '../assets/icons/tiktok-logo.webp';
-import xLogo from '../assets/icons/x-logo.webp';
-import youtubeLogo from '../assets/icons/youtube-logo.webp';
+import styles from './Footer.module.scss';
+import logo from '../../assets/icons/main-logo.webp'
+import appStoreLogo from '../../assets/icons/app_store-logo.webp';
+import googlePlayLogo from '../../assets/icons/google_play-logo.webp';
+import facebookLogo from '../../assets/icons/facebook-logo.webp';
+import instagramLogo from '../../assets/icons/instagram-logo.webp';
+import tiktokLogo from '../../assets/icons/tiktok-logo.webp';
+import xLogo from '../../assets/icons/x-logo.webp';
+import youtubeLogo from '../../assets/icons/youtube-logo.webp';
 
 const Footer = () => {
     return (
