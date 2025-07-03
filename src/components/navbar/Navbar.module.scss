@@ -1,13 +1,19 @@
 @use '@scss/globals' as *;
 
 .navbar {
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-radius: 80px;
-    background-color: $grey-200;
+    background-color: $white;
     height: 72px;
     max-width: 1200px;
+    top: 24px;
+    z-index: 99;
+    translate: -50%;
+    left: 50%;
+    width: 100%;
 
     &__container {
         display: flex;
@@ -18,7 +24,11 @@
     }
 
     &__logo {
-        height: 48px;
+        // height: 48px;
+
+        img {
+            height: 52px;
+        }
     }
 
     &__links {
