@@ -86,7 +86,7 @@ export default function About() {
                     clickable: true,
                 }}
                 onInit={(swiper) => {
-                    if (typeof swiper.params.navigation !== "boolean") {
+                    if (swiper.params.navigation && typeof swiper.params.navigation !== "boolean") {
                         swiper.params.navigation.prevEl = prevRef.current;
                         swiper.params.navigation.nextEl = nextRef.current;
                         swiper.navigation.init();
@@ -94,9 +94,28 @@ export default function About() {
                     }
                 }}
                 breakpoints={{
-                    768: { slidesPerView: 2 },
-                    1024: { slidesPerView: 3 },
-                }}
+                    0: {
+                      slidesPerView: 1,
+                      spaceBetween: 16,
+                    },
+                    640: {
+                      slidesPerView: 1.2, 
+                      spaceBetween: 20,
+                    },
+                    768: {
+                      slidesPerView: 2,
+                      spaceBetween: 24,
+                    },
+                    1024: {
+                      slidesPerView: 2.5,
+                      spaceBetween: 32,
+                    },
+                    1280: {
+                      slidesPerView: 2.9,
+                      spaceBetween: 36,
+                    },
+                  }}
+                  
             >
                 {testimonials.map((item, index) => (
                     <SwiperSlide key={index}>
