@@ -1,0 +1,92 @@
+@use '@scss/globals' as *;
+
+.ultimate {
+  padding: 60px 20px;
+  background-color: $bg-primary;
+  text-align: center;
+
+  &__title {
+    font-size: 28px;
+    font-weight: 700;
+    color: $grey-950;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    padding-top: 8px;
+    padding-bottom: 32px;
+  }
+
+  &__list {
+    display: grid;
+    gap: 20px;
+  }
+
+  &__card {
+    background: #FFFFFF;
+    border-radius: 1rem;
+    padding: 40px 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+  }
+
+  &__icon {
+    object-fit: contain;
+    margin-bottom: 20px;
+  }
+
+  &__cardTitle {
+    font-size: 18px;
+    font-weight: 600;
+    color: $grey-950;
+    margin-bottom: 0.5rem;
+  }
+
+  &__cardDesc {
+    font-size: 16px;
+    color: $grey-600;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: $md) {
+  .ultimate {
+    padding: 60px 60px;
+
+    &__list {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      justify-items: center;
+    }
+  }
+}
+
+@media (min-width: $xl) {
+  .ultimate {
+    padding: 80px 60px;
+
+    &__list {
+      grid-template-columns: repeat(4, 1fr); 
+
+    }
+  }
+}
+
+@media (min-width: $xl) {
+  .ultimate {
+    padding: 80px 120px;
+
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); 
+      grid-template-rows: auto;                                   
+    }
+
+    &__card {
+      padding: 40px 16px;
+    }
+  }
+}
