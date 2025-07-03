@@ -1,0 +1,119 @@
+@use '@scss/globals' as *;
+.faq {
+    padding: 60px 20px;
+    text-align: center;
+    background-image: url("../../assets/faq/bg-phone.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+  
+
+    @media (min-width: 1024px) {
+      background-image: url("../../assets/faq/bg-dekstop.webp");
+      padding: 6rem 2rem;
+    }
+  
+  
+    &__title {
+      text-align: center;
+      font-weight: 600;
+      font-size: 28px;
+      margin-top: 16px;
+      margin-bottom: 24px;
+      letter-spacing: -0.02em;
+
+
+    }
+  
+    &__tabs {
+      display: flex;
+      gap:  8px;
+      justify-content: center;
+      margin-bottom: 2rem;
+
+
+    }
+  
+    &__tab {
+        padding: 8px 16px;
+      background: #f0f0f0;
+      border-radius: 48px;
+      font-size: 14px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+  
+      &--active {
+        background: #1C6D07;
+        color: #fff;
+      }
+    }
+  
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+  
+    &__item {
+      border: 1px solid #d0e2c6;
+      border-radius: 12px;
+      background-color: #ffffff;
+  
+      &--active {
+        border-color: #4caf50;
+        background-color: #f5fff2;
+      }
+    }
+  
+    &__question {
+      padding: 1rem;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: transparent;
+      width: 100%;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+
+
+
+    }
+  
+    &__answer {
+      padding: 0 1rem 1rem;
+      font-size: 0.95rem;
+      color: #444;
+      line-height: 1.5;
+      text-align: left;
+    }
+  
+    &__icon {
+        width: 24px;
+        height: 24px;
+        transition: transform 0.3s ease;
+      
+        &--active {
+          transform: rotate(180deg); 
+        }
+    }
+  }
+  
+
+  @media (min-width: $xl) {
+    .faq {
+      padding: 80px 60px;
+
+      &__title {
+        font-size: 44px;
+      }
+
+
+    }
+  }

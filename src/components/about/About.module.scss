@@ -4,6 +4,7 @@
     padding: 4rem 1.5rem;
     text-align: center;
     overflow: hidden;
+    background: $bg-primary;
 
     &__flag {
         width: 16px;
@@ -114,7 +115,7 @@
 
     &__footer {
         position: absolute;
-        bottom: 0px;
+        bottom: 10px;
         font-size: 14px;
         display: flex;
         justify-content: space-between;
