@@ -77,10 +77,10 @@ $xxl: 1600px;
 $xxl-max: 1599.98px;
 
 $breakpoints: (
-    xs: $xs,
-    sm: $sm,
-    md: $md,
-    lg: $lg,
-    xl: $xl,
-    xxl: $xxl,
+    xs: $xs-max,
+    sm: $sm-max,
+    md: $md-max,
+    lg: $lg-max,
+    xl: $xl-max,
+    xxl: $xxl-max,
 );
