@@ -2,22 +2,18 @@
 
 .navbar {
     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: $white;
+    z-index: 99;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 12px 12px 24px;
-    border-radius: 80px;
-    background-color: $white;
-    height: 72px;
-    max-width: 1200px;
-    top: 24px;
-    z-index: 99;
-    translate: -50%;
-    left: 50%;
-    width: 100%;
-    transition:
-        border-radius 0.2s,
-        top 0.2s;
+    border-radius: 0;
+    height: 64px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 
     &__container {
         display: flex;
@@ -26,115 +22,133 @@
         width: 100%;
     }
 
-    &__logo {
-        img {
-            height: 52px;
-        }
+    &__logo img {
+        height: 34px;
     }
 
     &__links {
-        display: flex;
-        gap: 32px;
+        display: none;
         list-style: none;
+        gap: 32px;
     }
 
+    &__links,
     &__buttons {
-        display: flex;
-        gap: 8px;
-        height: 44px;
+        display: none;
     }
 
     &__hamburger {
-        display: none;
+        display: block;
+        cursor: pointer;
     }
 
     &__overlay {
-        display: none;
+        display: flex;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 999;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+
+    &__overlayContent {
+        background: $white;
+        width: 75vw;
+        max-width: 320px;
+        height: 100%;
+        padding: 32px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        position: relative;
+        box-shadow: -2px 0 8px rgba(0, 0, 0, 0.08);
+    }
+
+    &__close {
+        background: none;
+        border: none;
+        font-size: 2rem;
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        cursor: pointer;
+    }
+
+    &__overlayContent ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__overlayButtons {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
     }
 
     &--scrolled {
-        border-radius: 0 !important;
-        top: 0 !important;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-        max-width: unset;
     }
 }
 
-@media (max-width: 1023.98px) {
+@include respond(lg) {
     .navbar {
-        border-radius: unset;
-        top: 0px;
-        padding: 20px;
+        top: 24px;
+        left: 50%;
+        translate: -50%;
+        padding: 12px 12px 12px 24px;
+        height: 72px;
+        max-width: 900px;
+        border-radius: 80px;
+        box-shadow: none;
+        transition:
+            border-radius 0.2s,
+            top 0.2s;
 
-        &__container {
-
-        }
-
-        &__logo {
-            img {
-                height: 34px;
-            }
+        &__logo img {
+            height: 52px;
         }
 
         &__links,
         &__buttons {
+            display: flex;
+        }
+
+        &__buttons {
+            gap: 8px;
+        }
+
+        &__hamburger,
+        &__overlay {
             display: none;
         }
 
-        &__hamburger {
-            display: block;
-            cursor: pointer;
-        }
-
-        &__overlay {
-            display: flex;
-            position: fixed;
+        &--scrolled {
+            border-radius: 0;
             top: 0;
             left: 0;
-            width: 100vw;
-            height: 100vh;
-            background: rgba(0, 0, 0, 0.6);
-            z-index: 999;
-            align-items: flex-start;
-            justify-content: flex-end;
+            right: 0;
+            max-width: 100%;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            translate: 0;
         }
+    }
+}
 
-        &__overlayContent {
-            background: $white;
-            width: 75vw;
-            max-width: 320px;
-            height: 100%;
-            padding: 32px 24px;
-            display: flex;
-            flex-direction: column;
-            gap: 32px;
-            position: relative;
-            box-shadow: -2px 0 8px rgba(0, 0, 0, 0.08);
-        }
+@include respond(xl) {
+    .navbar {
+        max-width: 1200px;
 
-        &__close {
-            background: none;
-            border: none;
-            font-size: 2rem;
-            position: absolute;
-            top: 16px;
-            right: 16px;
-            cursor: pointer;
-        }
-
-        &__overlayContent ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
-        }
-
-        &__overlayButtons {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
+        &--scrolled {
+            left: 0;
+            right: 0;
+            width: 100%;
+            max-width: none;
+            transform: none;
         }
     }
 }
