@@ -97,11 +97,15 @@
     }
     &__icon {
       object-fit: contain;
-      padding: 40px 50px 20px;
+      padding: unset;
+      width: 167px;
+      margin: auto;
+      padding-bottom: 20px;
 
     }
     &__card {
       padding: 0px 0px;
+      padding: 48px 0px 0px 0px;
       justify-content: space-between;
     }
   }

@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./Ultimate.module.scss";
 
-import item1 from "../../assets/ultimate/item-1.webp";
-import item2 from "../../assets/ultimate/item-2.webp";
-import item3 from "../../assets/ultimate/item-3.webp";
-import item4 from "../../assets/ultimate/item-4.webp";
+import item1 from "../../assets/ultimate/ultimate-1.webp";
+import item2 from "../../assets/ultimate/ultimate-2.webp";
+import item3 from "../../assets/ultimate/ultimate-3.webp";
+import item4 from "../../assets/ultimate/ultimate-4.webp";
 import Button from "../ui/Button.tsx/Button";
 
 const features = [
