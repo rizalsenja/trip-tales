@@ -20,9 +20,13 @@ const planItems = [
 const Plan = () => {
     return (
         <section className={styles.plan}>
+            <img
+                src="src/assets/plan/pattern-bottom.webp"
+                alt="Phone Background"
+                className={styles.plan__patternBottom}
+            />
             <div className={styles.plan__block}>
                 <div className={styles.plan__image1}>
-
                     <img
                         src="src/assets/plan/bg-img-phone-1.webp"
                         alt="Phone Background"
@@ -33,22 +37,27 @@ const Plan = () => {
                         alt="Pattern"
                         className={styles.plan__pattern}
                     />
-                    <img
-                        src="src/assets/plan/plan-icon.webp"
-                        alt="Plane Icon"
-                        className={styles.plan__iconplan}
-                    />
-                    <img
-                        src="src/assets/plan/text.webp"
-                        alt="Trip Text"
-                        className={styles.plan__text}
-                    />
-                    <img
-                        src="src/assets/plan/frame-1.webp"
-                        alt="Phone Frame"
-                        className={styles.plan__frame}
-                    />
+
+                    <div className={styles.plan__group}>
+
+                        <img
+                            src="src/assets/plan/plan-icon.webp"
+                            alt="Plane Icon"
+                            className={styles.plan__iconplan}
+                        />
+                        <img
+                            src="src/assets/plan/text.webp"
+                            alt="Trip Text"
+                            className={styles.plan__text}
+                        />
+                        <img
+                            src="src/assets/plan/frame-1.webp"
+                            alt="Phone Frame"
+                            className={styles.plan__frame}
+                        />
+                    </div>
                 </div>
+
                 <div className={styles.plan__content}>
                     <Button label="Trip Planner" size="xl" variant="outline" color="primary" />
                     <h2 className={styles.plan__title}>Plan Your Journey, Your Way</h2>
@@ -56,6 +65,7 @@ const Plan = () => {
                         Effortlessly organize your travel from start to finish.
                         <br />
                         Create personalized itineraries, add accommodations, attractions, and activities,
+                        <br />
                         <br />
                         and manage everything in one place. Whether you're planning a weekend escape or a
                         multi-country adventure, our trip planner keeps you on track.
@@ -79,35 +89,44 @@ const Plan = () => {
                         alt="Find next adventure"
                         className={styles.plan__frame2}
                     />
-                    <img
-                        src="src/assets/plan/bg-img-phone-2.webp"
-                        alt="Phone background"
-                        className={styles.plan__phoneBg2}
-                    />
-                    <img
-                        src="src/assets/plan/icon-search.webp"
-                        alt="Search Icon"
-                        className={styles.plan__iconSearch}
-                    />
-                    <img
-                        src="src/assets/plan/text-2.webp"
-                        alt="Text Overlay"
-                        className={styles.plan__text2}
-                    />
-                    <img
-                        src="src/assets/plan/map.webp"
-                        alt="Map Graphic"
-                        className={styles.plan__map}
-                    />
+
+                    <div className={styles.plan__group}>
+                        <img
+                            src="src/assets/plan/bg-img-phone-2.webp"
+                            alt="Phone background"
+                            className={styles.plan__phoneBg2}
+                        />
+                        <img
+                            src="src/assets/plan/icon-search.webp"
+                            alt="Search Icon"
+                            className={styles.plan__iconSearch}
+                        />
+                        <img
+                            src="src/assets/plan/text-2.webp"
+                            alt="Text Overlay"
+                            className={styles.plan__text2}
+                        />
+                        <img
+                            src="src/assets/plan/map.webp"
+                            alt="Map Graphic"
+                            className={styles.plan__map}
+                        />
+
+
+                    </div>
                 </div>
                 <div className={styles.plan__content}>
-                   <Button label="Destination Discovery" size="xl" variant="outline" color="primary" />
+                    <Button label="Destination Discovery" size="xl" variant="outline" color="primary" />
                     <h2 className={styles.plan__title}>Find Your Next Adventure</h2>
                     <p className={styles.plan__desc}>
-                    Find your perfect getaway with smart, curated suggestions.
-                    Browse destinations based on your interests, travel style, budget, and season. From iconic landmarks to hidden gems, uncover new places through reviews, images, and real traveler tips.
-                    <Button label="Discover More" size="xl" variant="filled" color="primary" />
+                        Find your perfect getaway with smart, curated suggestions.
+                        <br />
+                        Browse destinations based on your interests, travel style, budget, and season. From iconic landmarks to hidden gems, uncover new places through reviews, images, and real traveler tips.
                     </p>
+                    <div className={styles.plan__btns}>
+                        <Button label="Discover More" size="xl" variant="filled" color="primary" />
+                    </div>
+
                 </div>
             </div>
 
@@ -115,15 +134,19 @@ const Plan = () => {
             <div className={styles.plan__block}>
                 <div className={styles.plan__image3}>
                     <img src="src/assets/plan/bg-img-phone-3.webp" alt="Share with others" className={styles.plan__phoneBg3} />
-                    <img src="src/assets/plan/frame-3.webp" alt="frame" className={styles.plan__frame3} />
-                    <img src="src/assets/plan/star.webp" alt="star" className={styles.plan__star} />
-                    <img src="src/assets/plan/text-3.webp" alt="text" className={styles.plan__text3} />
+                    <div className={styles.plan__group}>
+                        <img src="src/assets/plan/frame-3.webp" alt="frame" className={styles.plan__frame3} />
+                        <img src="src/assets/plan/star.webp" alt="star" className={styles.plan__star} />
+                        <img src="src/assets/plan/text-3.webp" alt="text" className={styles.plan__text3} />
+                    </div>
+
                 </div>
-                <div className={styles.plan__content}>
+                <div className={styles.plan__content3}>
+                    <Button label="Social Sharing" size="xl" variant="outline" color="primary" />
                     <h2 className={styles.plan__title}>Travel Together, Even Apart</h2>
                     <p className={styles.plan__desc}>
-                    Find your perfect getaway with smart, curated suggestions.
-                    Browse destinations based on your interests, travel style, budget, and season. From iconic landmarks to hidden gems, uncover new places through reviews, images, and real traveler tips.
+                        Find your perfect getaway with smart, curated suggestions.
+                        Browse destinations based on your interests, travel style, budget, and season. From iconic landmarks to hidden gems, uncover new places through reviews, images, and real traveler tips.
                     </p>
                     <div className={styles.plan__stats}>
                         <div className={styles.plan__stat}>
@@ -144,14 +167,28 @@ const Plan = () => {
 
             {/* Section 4 */}
             <div className={styles.plan__block}>
-                <div className={styles.plan__image}>
-                    <img src="/assets/plan/plan-4.webp" alt="Reuse plan" />
+                <div className={styles.plan__image4}>
+                    <img src="src/assets/plan/bg-img-phone-4.webp" alt="bg-img-phone-4" className={styles.plan__phoneBg4} />
+                    <div className={styles.plan__group}>
+                        <img src="src/assets/plan/frame-4.webp" alt="frame-4" className={styles.plan__frame4} />
+                        <img src="src/assets/plan/icon-4.webp" alt="Reuse plan" className={styles.plan__icon4} />
+                        <img src="src/assets/plan/text-4.webp" alt="text-4" className={styles.plan__text4} />
+                    </div>
+
                 </div>
                 <div className={styles.plan__content}>
+                    <Button label="Destination Discovery" size="xl" variant="outline" color="primary" />
                     <h2 className={styles.plan__title}>Keep, Reuse, and Travel Smarter</h2>
                     <p className={styles.plan__desc}>
-                        Save your plans and reuse them for future adventures or share with others.
+                        Keep your best travel ideas ready for next time.
+                        Save your trip itineraries and favorite spots for future use. Reuse or adapt
+
+                        previous plans with just a few taps—perfect for repeat visits or building new trips faster.
                     </p>
+                    <div className={styles.plan__btns}>
+                        <Button label="Discover" size="xl" variant="filled" color="primary" />
+                    </div>
+
                 </div>
             </div>
         </section>
