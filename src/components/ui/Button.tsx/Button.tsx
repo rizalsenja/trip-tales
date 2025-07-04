@@ -3,6 +3,7 @@ import styles from './Button.module.scss';
 
 interface ButtonProps {
 	label: string;
+	className?: string;
 	variant?: 'filled' | 'outline' | 'text' | 'link';
 	size?: 'xl' | 'md' | 'sm';
 	color?: 'primary' | 'secondary' | 'red';
@@ -11,13 +12,14 @@ interface ButtonProps {
 
 const Button: React.FC<ButtonProps> = ({
 	label,
+	className = '',
 	variant = 'filled',
 	size = 'md',
 	color = 'primary',
 	disabled = false,
 }) => {
 	return (
-		<button className={`${styles.button} ${styles[variant]} ${styles[size]} ${styles[color]}`} disabled={disabled}>
+		<button className={`${styles.button} ${styles[variant]} ${styles[size]} ${styles[color]} ${className}`} disabled={disabled}>
         {label}
 		</button>
 	);
