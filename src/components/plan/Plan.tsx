@@ -20,45 +20,38 @@ const planItems = [
 const Plan = () => {
     return (
         <section className={styles.plan}>
+
             <img
                 src="src/assets/plan/pattern-bottom.webp"
                 alt="Phone Background"
                 className={styles.plan__patternBottom}
-            />
-            <div className={styles.plan__block}>
+            />ß
+            <div className={styles.plan__block1}>
                 <div className={styles.plan__image1}>
+
                     <img
                         src="src/assets/plan/bg-img-phone-1.webp"
                         alt="Phone Background"
                         className={styles.plan__background}
                     />
+
                     <img
                         src="src/assets/plan/pattern.webp"
                         alt="Pattern"
                         className={styles.plan__pattern}
                     />
 
-                    <div className={styles.plan__group}>
+                    <div className={styles.plan__group1}>
 
                         <img
-                            src="src/assets/plan/plan-icon.webp"
-                            alt="Plane Icon"
-                            className={styles.plan__iconplan}
-                        />
-                        <img
-                            src="src/assets/plan/text.webp"
-                            alt="Trip Text"
-                            className={styles.plan__text}
-                        />
-                        <img
-                            src="src/assets/plan/frame-1.webp"
-                            alt="Phone Frame"
-                            className={styles.plan__frame}
+                            src="src/assets/plan/img-ds-1.webp"
+                            alt="Phone Background"
+                            className={styles.plan__background1}
                         />
                     </div>
                 </div>
 
-                <div className={styles.plan__content}>
+                <div className={styles.plan__content1}>
                     <Button label="Trip Planner" size="xl" variant="outline" color="primary" />
                     <h2 className={styles.plan__title}>Plan Your Journey, Your Way</h2>
                     <p className={styles.plan__desc}>
@@ -82,7 +75,7 @@ const Plan = () => {
             </div>
 
             {/* Section 2 */}
-            <div className={styles.plan__block}>
+            <div className={styles.plan__block2}>
                 <div className={styles.plan__image2}>
                     <img
                         src="src/assets/plan/frame-2.webp"
@@ -90,7 +83,13 @@ const Plan = () => {
                         className={styles.plan__frame2}
                     />
 
-                    <div className={styles.plan__group}>
+                    <div className={styles.plan__group2}>
+                        <img
+                            src="src/assets/plan/img-ds-2.webp"
+                            alt="Phone background"
+                            className={styles.plan__background2}
+                        />
+
                         <img
                             src="src/assets/plan/bg-img-phone-2.webp"
                             alt="Phone background"
@@ -115,7 +114,7 @@ const Plan = () => {
 
                     </div>
                 </div>
-                <div className={styles.plan__content}>
+                <div className={styles.plan__content2}>
                     <Button label="Destination Discovery" size="xl" variant="outline" color="primary" />
                     <h2 className={styles.plan__title}>Find Your Next Adventure</h2>
                     <p className={styles.plan__desc}>
@@ -131,10 +130,16 @@ const Plan = () => {
             </div>
 
             {/* Section 3 */}
-            <div className={styles.plan__block}>
+            <div className={styles.plan__block3}>
                 <div className={styles.plan__image3}>
                     <img src="src/assets/plan/bg-img-phone-3.webp" alt="Share with others" className={styles.plan__phoneBg3} />
-                    <div className={styles.plan__group}>
+                    <div className={styles.plan__group3}>
+
+                           <img
+                            src="src/assets/plan/img-ds-3.webp"
+                            alt="Phone background"
+                            className={styles.plan__background3}
+                        />
                         <img src="src/assets/plan/frame-3.webp" alt="frame" className={styles.plan__frame3} />
                         <img src="src/assets/plan/star.webp" alt="star" className={styles.plan__star} />
                         <img src="src/assets/plan/text-3.webp" alt="text" className={styles.plan__text3} />
@@ -166,17 +171,22 @@ const Plan = () => {
             </div>
 
             {/* Section 4 */}
-            <div className={styles.plan__block}>
+            <div className={styles.plan__block4}>
                 <div className={styles.plan__image4}>
                     <img src="src/assets/plan/bg-img-phone-4.webp" alt="bg-img-phone-4" className={styles.plan__phoneBg4} />
-                    <div className={styles.plan__group}>
+                    <div className={styles.plan__group4}>
+                                             <img
+                            src="src/assets/plan/img-ds-4.webp"
+                            alt="Phone background"
+                            className={styles.plan__background4}
+                        />
                         <img src="src/assets/plan/frame-4.webp" alt="frame-4" className={styles.plan__frame4} />
                         <img src="src/assets/plan/icon-4.webp" alt="Reuse plan" className={styles.plan__icon4} />
                         <img src="src/assets/plan/text-4.webp" alt="text-4" className={styles.plan__text4} />
                     </div>
 
                 </div>
-                <div className={styles.plan__content}>
+                <div className={styles.plan__content4}>
                     <Button label="Destination Discovery" size="xl" variant="outline" color="primary" />
                     <h2 className={styles.plan__title}>Keep, Reuse, and Travel Smarter</h2>
                     <p className={styles.plan__desc}>
