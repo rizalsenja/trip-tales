@@ -1,0 +1,274 @@
+@use "@scss/globals" as *;
+
+.plan {
+    background: linear-gradient(180deg, $green-950 0%, #244F07 93.81%), linear-gradient(180deg, $white 9.1%, #EEFCF7 101.97%);
+    position: relative;
+
+    &__background {
+        overflow: hidden;
+
+        &__main {
+            width: 100%;
+            height: 100%;
+            // background: url('/src/assets/plan2/background-plan-xl.webp') no-repeat;
+
+            img {
+                translate: -2px 0px;
+                scale: 1.03;
+                width: 100%;
+            }
+        }
+
+        &__wave {
+            overflow: hidden;
+            width: 100%;
+
+            &--top {
+                img {
+                    translate: 0px -2px;
+                    margin-bottom: 22px;
+                    width: 100%;
+                }
+            }
+
+            &--bottom {
+                img {
+                    translate: 0px 6px;
+                    margin-top: 97.55px;
+                    // margin-top: 39px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &__container {
+        position: absolute;
+        top: 0;
+        z-index: 2;
+    }
+
+    &__content {
+        display: flex;
+
+        &--one {
+            padding-top: 180px;
+            padding-left: 106px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 118.44px;
+
+            .button__container {
+                width: 117px;
+            }
+
+            .button__planner {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: -0.02em;
+                color: #FFFFFF;
+                padding: 8px 12px;
+                width: 100%;
+            }
+        }
+
+        &--two {
+            padding-top: 140px;
+            padding-left: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 94px;
+
+            .button__container {
+                width: 183px;
+            }
+
+            .button__adventure {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: -0.02em;
+                color: #FFFFFF;
+                padding: 8px 12px;
+                width: 100%;
+            }
+
+            .button__discover__more {
+                width: 187px;
+                height: 48px;
+                background: #B7FF91;
+                border-radius: 12px;
+                margin-top: 16px;
+            }
+        }
+
+        &--three {
+            padding-top: 140.87px;
+            padding-left: 42px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 117px;
+
+            .button__container {
+                width: 131px;
+            }
+
+            .button__social {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: -0.02em;
+                color: #FFFFFF;
+                padding: 8px 12px;
+                width: 100%;
+            }
+
+            .social__card {
+                display: flex;
+                gap: 16px;
+
+                &__content {
+                    width: 196px;
+                    height: 130px;
+                    background: rgba(82, 132, 18, 0.4);
+                    box-shadow: 0px 12px 20px -8px rgba(0, 0, 0, 0.06);
+                    border-radius: 16px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 4px;
+                    color: $white;
+
+                    &__number {
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 32px;
+                        text-align: center;
+                        letter-spacing: -0.02em;
+                    }
+
+                    &__description {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: -0.02em;
+                    }
+                }
+            }
+        }
+
+        &--four {
+            padding-top: 170px;
+            padding-left: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 57px;
+
+            .plan__text__top__heading__title {
+                width: 620px;
+            }
+
+            .plan__text__top__description {
+                width: 555px;
+            }
+
+            .button__container {
+                width: 165px;
+            }
+
+            .button__save {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: -0.02em;
+                color: #FFFFFF;
+                padding: 8px 12px;
+                width: 100%;
+            }
+
+            .button__discover {
+                width: 145px;
+                height: 48px;
+                background: #B7FF91;
+                border-radius: 12px;
+                margin-top: 16px;
+            }
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        &__top {
+            display: flex;
+            gap: 18px;
+
+            &__heading {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+
+                
+
+                &__title {
+                    color: $white;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 44px;
+                    line-height: 50px;
+                    letter-spacing: -0.02em;
+                }
+            }
+
+            &__description {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: -0.02em;
+                color: #CCDBB7;
+                width: 588px;
+            }
+        }
+
+        &__bottom {
+            display: flex;
+            gap: 12px;
+
+            &__label {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 12px 16px;
+                gap: 12px;
+                background-color: rgba(82, 132, 18, 0.4);
+                box-shadow: 0px 12px 20px -8px rgba(0, 0, 0, 0.06);
+                border-radius: 16px;
+            }
+
+            &__description {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: -0.02em;
+                color: $white;
+            }
+        }
+    }
+}
