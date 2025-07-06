@@ -10,4 +10,5 @@ export default defineConfig({
       '@scss': path.resolve(__dirname, './src/assets/styles'),
     },
   },
+  base: '/trip-tales/',
 })
