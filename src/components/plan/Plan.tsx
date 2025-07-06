@@ -52,7 +52,7 @@ const Plan = () => {
                 </div>
 
                 <div className={styles.plan__content1}>
-                    <Button label="Trip Planner" size="xl" variant="outline" color="primary" />
+                    <Button label="Trip Planner" size="xl" variant="outline" color="primary" className={styles.button__top} />
                     <h2 className={styles.plan__title}>Plan Your Journey, Your Way</h2>
                     <p className={styles.plan__desc}>
                         Effortlessly organize your travel from start to finish.
@@ -115,12 +115,14 @@ const Plan = () => {
                     </div>
                 </div>
                 <div className={styles.plan__content2}>
-                    <Button label="Destination Discovery" size="xl" variant="outline" color="primary" />
+                    <Button label="Destination Discovery" size="xl" variant="outline" color="primary" className={styles.button__top} />
                     <h2 className={styles.plan__title}>Find Your Next Adventure</h2>
                     <p className={styles.plan__desc}>
                         Find your perfect getaway with smart, curated suggestions.
                         <br />
-                        Browse destinations based on your interests, travel style, budget, and season. From iconic landmarks to hidden gems, uncover new places through reviews, images, and real traveler tips.
+                        Browse destinations based on your interests, travel style, budget, and season.
+                        
+                        From iconic landmarks to hidden gems, uncover new places through reviews, images, and real traveler tips.
                     </p>
                     <div className={styles.plan__btns}>
                         <Button label="Discover More" size="xl" variant="filled" color="primary" />
@@ -147,7 +149,7 @@ const Plan = () => {
 
                 </div>
                 <div className={styles.plan__content3}>
-                    <Button label="Social Sharing" size="xl" variant="outline" color="primary" />
+                    <Button label="Social Sharing" size="xl" variant="outline" color="primary" className={styles.button__top} />
                     <h2 className={styles.plan__title}>Travel Together, Even Apart</h2>
                     <p className={styles.plan__desc}>
                         Find your perfect getaway with smart, curated suggestions.
@@ -187,7 +189,7 @@ const Plan = () => {
 
                 </div>
                 <div className={styles.plan__content4}>
-                    <Button label="Destination Discovery" size="xl" variant="outline" color="primary" />
+                    <Button label="Save & Reuse Plans" size="xl" variant="outline" color="primary" className={styles.button__top} />
                     <h2 className={styles.plan__title}>Keep, Reuse, and Travel Smarter</h2>
                     <p className={styles.plan__desc}>
                         Keep your best travel ideas ready for next time.
