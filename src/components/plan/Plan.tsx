@@ -25,7 +25,7 @@ const Plan = () => {
                 src="src/assets/plan/pattern-bottom.webp"
                 alt="Phone Background"
                 className={styles.plan__patternBottom}
-            />ß
+            />
             <div className={styles.plan__block1}>
                 <div className={styles.plan__image1}>
 
