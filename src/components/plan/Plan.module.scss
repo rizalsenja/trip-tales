@@ -1,6 +1,5 @@
 @use '@scss/globals' as *;
 
-
 .plan {
     padding: 60px 0px;
     background: linear-gradient(180deg, #083400 0%, #244F07 93.81%);
@@ -150,6 +149,15 @@
         button {
             padding: 8px 20px;
         }
+
+        .button__top {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -0.02em;
+            color: $white;
+        }
     }
 
     &__content2 {
@@ -158,6 +166,15 @@
 
         button {
             padding: 8px 20px;
+        }
+
+        .button__top {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: -0.02em;
+            color: $white;
         }
     }
 
@@ -168,6 +185,15 @@
         button {
             padding: 8px 20px;
         }
+
+        .button__top {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: -0.02em;
+            color: $white;
+        }
     }
 
     &__content4 {
@@ -176,6 +202,15 @@
 
         button {
             padding: 8px 20px;
+        }
+
+        .button__top {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: -0.02em;
+            color: #CCDBB7;
         }
     }
 
@@ -199,6 +234,7 @@
     }
 
     &__desc {
+        font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
@@ -404,8 +440,7 @@
     }
 }
 
-
-@media (min-width: 768px) {
+@media (min-width: $md-max) {
 
     .plan {
         &__pattern {
@@ -444,10 +479,7 @@
     }
 }
 
-
-
-
-@media (min-width: 1024px) {
+@media (min-width: $lg-max) {
 
     .plan {
 
@@ -515,16 +547,51 @@
         &__content2 {
             width: 100%;
             padding: 0px 40px;
+
+            .button__top {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: -0.02em;
+                color: $white;
+            }
         }
 
         &__content3 {
             width: 120%;
             padding: 0px 40px;
+
+            .button__top {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: -0.02em;
+                color: $white;
+            }
         }
 
         &__content4 {
             width: 100%;
             padding: 0px 40px;
+
+            .button__top {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: -0.02em;
+                color: $white;
+            }
+        }
+
+        &__title {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 44px;
+            letter-spacing: -0.02em;
         }
 
         &__background {
@@ -558,8 +625,7 @@
 
 }
 
-
-@media (min-width: $xl) {
+@media (min-width: $xl-max) {
 
     .plan {
 
@@ -595,22 +661,50 @@
 
         &__content1 {
             width: 100%;
+            // padding: 0px 140px;
+            padding: 140px 70px 0px 70px;
         }
 
         &__content2 {
             width: 100%;
+            // padding: 0px 120px;
+            padding: 0px 60px 0px 120px;
         }
 
         &__content3 {
             width: 100%;
-            padding: 65px 40px;
+            // padding: 65px 40px;
+            padding: 80px 90px 0px 50px;
 
+            @media (min-width: 1599.98px) {
+                padding: 140px 90px 0px 50px;
+            }
+
+            @media (min-width: 1599.98px) {
+                padding: 200px 90px 0px 50px;
+            }
         }
 
         &__content4 {
             width: 100%;
-            padding: 65px 40px;
+            // padding: 65px 40px;
+            padding: 65px 100px 0px 120px;
 
+            @media (min-width: 1599.98px) {
+                padding: 140px 90px 0px 50px;
+            }
+
+            @media (min-width: 1599.98px) {
+                padding: 200px 90px 0px 50px;
+            }
+        }
+
+        &__title {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 50px;
+            letter-spacing: -0.02em;
         }
 
 
