@@ -1,6 +1,7 @@
 import { useState, type JSX } from "react";
 import styles from "./Faq.module.scss";
 import Button from "../ui/Button.tsx/Button";
+import iconArrow from '../../assets/faq/arrow.webp'
 
 // Define type for FAQ entry
 type FaqItem = {
@@ -81,7 +82,7 @@ export default function Faq(): JSX.Element {
                         >
                             {faq.question}
                             <img
-                                src="/src/assets/faq/arrow.webp"
+                                src={iconArrow}
                                 alt="Toggle arrow"
                                 className={`${styles.faq__icon} ${activeIndex === idx ? styles["faq__icon--active"] : ""}`}
                             />
