@@ -7,6 +7,8 @@ import bgImgPhone1 from '../../assets/plan/bg-img-phone-1.webp'
 import bgImgPhone2 from '../../assets/plan/bg-img-phone-2.webp'
 import bgImgPhone3 from '../../assets/plan/bg-img-phone-3.webp'
 import bgImgPhone4 from '../../assets/plan/bg-img-phone-4.webp'
+import patternTop from '../../assets/plan/pattern.webp'
+import patternBottom from '../../assets/plan/pattern-bottom.webp'
 
 const planItems = [
     {
@@ -28,7 +30,7 @@ const Plan = () => {
         <section className={styles.plan}>
 
             <img
-                src="src/assets/plan/pattern-bottom.webp"
+                src={patternBottom}
                 alt="Phone Background"
                 className={styles.plan__patternBottom}
             />
@@ -42,7 +44,7 @@ const Plan = () => {
                     />
 
                     <img
-                        src="src/assets/plan/pattern.webp"
+                        src={patternTop}
                         alt="Pattern"
                         className={styles.plan__pattern}
                     />
