@@ -3,15 +3,15 @@ import Button from "../ui/Button.tsx/Button";
 
 const planItems = [
     {
-        icon: "/src/assets/plan/icon-itinerary.webp",
+        icon: "../../../src/assets/plan/icon-itinerary.webp",
         text: "Build custom itineraries day–by–day",
     },
     {
-        icon: "/src/assets/plan/icon-distances.webp",
+        icon: "../../../src/assets/plan/icon-distances.webp",
         text: "Add destinations, accommodations, activities & notes",
     },
     {
-        icon: "/src/assets/plan/icon-destination.webp",
+        icon: "../../../src/assets/plan/icon-destination.webp",
         text: "Get time estimates and travel distances",
     },
 ];
