@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './Hero.module.scss'
 import heroImg from '../../assets/img/hero-img2.webp'
 import Button from '../ui/Button.tsx/Button';

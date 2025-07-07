@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Plan.module.scss";
 import Button from "../ui/Button.tsx/Button";
 

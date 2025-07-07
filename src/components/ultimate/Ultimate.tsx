@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./Ultimate.module.scss";
 
 import item1 from "../../assets/ultimate/ultimate-1.webp";

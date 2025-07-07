@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState, type JSX } from "react";
 import styles from "./Faq.module.scss";
 import Button from "../ui/Button.tsx/Button";
 
