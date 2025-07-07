@@ -1,17 +1,20 @@
 import styles from "./Plan.module.scss";
 import Button from "../ui/Button.tsx/Button";
+import icon1 from '../../assets/plan/icon-itinerary.webp'
+import icon2 from '../../assets/plan/icon-distances.webp'
+import icon3 from '../../assets/plan/icon-destination.webp'
 
 const planItems = [
     {
-        icon: "../../../src/assets/plan/icon-itinerary.webp",
+        icon: icon1,
         text: "Build custom itineraries day–by–day",
     },
     {
-        icon: "../../../src/assets/plan/icon-distances.webp",
+        icon: icon2,
         text: "Add destinations, accommodations, activities & notes",
     },
     {
-        icon: "../../../src/assets/plan/icon-destination.webp",
+        icon: icon3,
         text: "Get time estimates and travel distances",
     },
 ];
