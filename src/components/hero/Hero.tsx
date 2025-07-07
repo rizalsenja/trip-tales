@@ -10,13 +10,16 @@ const Hero = () => {
         name: '',
         country: '',
         email: '',
+        feedback: false,
     });
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setFormData({
-            ...formData,
-            [e.target.name]: e.target.value,
-        });
+        const { name, value, type, checked } = e.target;
+
+        setFormData(prev => ({
+            ...prev,
+            [name]: type === 'checkbox' ? checked : value,
+        }));
     };
 
     const handleSubmit = async (e: React.FormEvent) => {
@@ -34,7 +37,7 @@ const Hero = () => {
         });
 
             console.log('Thank you for signing up!');
-            setFormData({ name: '', country: '', email: '' });
+            setFormData({ name: '', country: '', email: '', feedback: false });
         } catch (error) {
             console.error('Error saving to Firestore:', error);
         }
@@ -93,7 +96,13 @@ const Hero = () => {
 				</form>
 
                 <label className={styles.hero__checkbox}>
-                    <input type='checkbox' className={styles.hero__checkbox__input} />
+                    <input
+                        type='checkbox'
+                        name='feedback'
+                        className={styles.hero__checkbox__input}
+                        checked={formData.feedback}
+                        onChange={handleChange}
+                    />
                     <span>
                         TripTales may contact me for feedback on design and features
                     </span>
