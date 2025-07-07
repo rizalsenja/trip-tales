@@ -9,6 +9,10 @@ import bgImgPhone3 from '../../assets/plan/bg-img-phone-3.webp'
 import bgImgPhone4 from '../../assets/plan/bg-img-phone-4.webp'
 import patternTop from '../../assets/plan/pattern.webp'
 import patternBottom from '../../assets/plan/pattern-bottom.webp'
+import imgDs1 from '../../assets/plan/img-ds-1.webp'
+import imgDs2 from '../../assets/plan/img-ds-2.webp'
+import imgDs3 from '../../assets/plan/img-ds-3.webp'
+import imgDs4 from '../../assets/plan/img-ds-4.webp'
 
 const planItems = [
     {
@@ -52,7 +56,7 @@ const Plan = () => {
                     <div className={styles.plan__group1}>
 
                         <img
-                            src="src/assets/plan/img-ds-1.webp"
+                            src={imgDs1}
                             alt="Phone Background"
                             className={styles.plan__background1}
                         />
@@ -93,7 +97,7 @@ const Plan = () => {
 
                     <div className={styles.plan__group2}>
                         <img
-                            src="src/assets/plan/img-ds-2.webp"
+                            src={imgDs2}
                             alt="Phone background"
                             className={styles.plan__background2}
                         />
@@ -146,7 +150,7 @@ const Plan = () => {
                     <div className={styles.plan__group3}>
 
                            <img
-                            src="src/assets/plan/img-ds-3.webp"
+                            src={imgDs3}
                             alt="Phone background"
                             className={styles.plan__background3}
                         />
@@ -185,8 +189,8 @@ const Plan = () => {
                 <div className={styles.plan__image4}>
                     <img src={bgImgPhone4} alt="bg-img-phone-4" className={styles.plan__phoneBg4} />
                     <div className={styles.plan__group4}>
-                                             <img
-                            src="src/assets/plan/img-ds-4.webp"
+                        <img
+                            src={imgDs4}
                             alt="Phone background"
                             className={styles.plan__background4}
                         />
