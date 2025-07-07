@@ -3,6 +3,10 @@ import Button from "../ui/Button.tsx/Button";
 import icon1 from '../../assets/plan/icon-itinerary.webp'
 import icon2 from '../../assets/plan/icon-distances.webp'
 import icon3 from '../../assets/plan/icon-destination.webp'
+import bgImgPhone1 from '../../assets/plan/bg-img-phone-1.webp'
+import bgImgPhone2 from '../../assets/plan/bg-img-phone-2.webp'
+import bgImgPhone3 from '../../assets/plan/bg-img-phone-3.webp'
+import bgImgPhone4 from '../../assets/plan/bg-img-phone-4.webp'
 
 const planItems = [
     {
@@ -32,7 +36,7 @@ const Plan = () => {
                 <div className={styles.plan__image1}>
 
                     <img
-                        src="src/assets/plan/bg-img-phone-1.webp"
+                        src={bgImgPhone1}
                         alt="Phone Background"
                         className={styles.plan__background}
                     />
@@ -93,7 +97,7 @@ const Plan = () => {
                         />
 
                         <img
-                            src="src/assets/plan/bg-img-phone-2.webp"
+                            src={bgImgPhone2}
                             alt="Phone background"
                             className={styles.plan__phoneBg2}
                         />
@@ -136,7 +140,7 @@ const Plan = () => {
             {/* Section 3 */}
             <div className={styles.plan__block3}>
                 <div className={styles.plan__image3}>
-                    <img src="src/assets/plan/bg-img-phone-3.webp" alt="Share with others" className={styles.plan__phoneBg3} />
+                    <img src={bgImgPhone3} alt="Share with others" className={styles.plan__phoneBg3} />
                     <div className={styles.plan__group3}>
 
                            <img
@@ -177,7 +181,7 @@ const Plan = () => {
             {/* Section 4 */}
             <div className={styles.plan__block4}>
                 <div className={styles.plan__image4}>
-                    <img src="src/assets/plan/bg-img-phone-4.webp" alt="bg-img-phone-4" className={styles.plan__phoneBg4} />
+                    <img src={bgImgPhone4} alt="bg-img-phone-4" className={styles.plan__phoneBg4} />
                     <div className={styles.plan__group4}>
                                              <img
                             src="src/assets/plan/img-ds-4.webp"
