@@ -10,30 +10,6 @@ import {
     icon4, iconSearch, iconMap,
 } from "../../assets/plan";
 
-// import icon1 from '../../assets/plan/icon-itinerary.webp'
-// import icon2 from '../../assets/plan/icon-distances.webp'
-// import icon3 from '../../assets/plan/icon-destination.webp'
-// import bgImgPhone1 from '../../assets/plan/bg-img-phone-1.webp'
-// import bgImgPhone2 from '../../assets/plan/bg-img-phone-2.webp'
-// import bgImgPhone3 from '../../assets/plan/bg-img-phone-3.webp'
-// import bgImgPhone4 from '../../assets/plan/bg-img-phone-4.webp'
-// import patternTop from '../../assets/plan/pattern.webp'
-// import patternBottom from '../../assets/plan/pattern-bottom.webp'
-// import imgDs1 from '../../assets/plan/img-ds-1.webp'
-// import imgDs2 from '../../assets/plan/img-ds-2.webp'
-// import imgDs3 from '../../assets/plan/img-ds-3.webp'
-// import imgDs4 from '../../assets/plan/img-ds-4.webp'
-// import frame2 from '../../assets/plan/frame-2.webp'
-// import frame3 from '../../assets/plan/frame-3.webp'
-// import frame4 from '../../assets/plan/frame-4.webp'
-// import imgStar from '../../assets/plan/star.webp'
-// import imgText2 from '../../assets/plan/text-2.webp'
-// import imgText3 from '../../assets/plan/text-3.webp'
-// import imgText4 from '../../assets/plan/text-4.webp'
-// import icon4 from '../../assets/plan/icon-4.webp'
-// import iconSearch from '../../assets/plan/icon-search.webp'
-// import iconMap from '../../assets/plan/map.webp'
-
 const planItems = [
     {
         icon: icon1,
