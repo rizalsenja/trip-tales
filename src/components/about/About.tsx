@@ -4,9 +4,7 @@ import Button from "../ui/Button.tsx/Button";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+
 
 // Define the type
 type Testimonial = {
