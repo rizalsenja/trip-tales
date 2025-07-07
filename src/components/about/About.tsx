@@ -4,6 +4,7 @@ import Button from "../ui/Button.tsx/Button";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
+import iconLike from '../../assets/about/icons_like.webp'
 
 
 // Define the type
@@ -135,7 +136,7 @@ export default function About() {
                                 </div>
                                 <div className={styles.about__actions}>
                                     <img
-                                        src="/src/assets/about/icons_like.webp"
+                                        src={iconLike}
                                         alt="Like icon"
                                         className={styles.about__likeIcon}
                                     />
