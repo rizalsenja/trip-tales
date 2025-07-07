@@ -28,7 +28,7 @@ const Hero = () => {
         }
 
         try {
-            await addDoc(collection(db, 'signups'), {
+            await addDoc(collection(db, 'signup-newsletter'), {
             ...formData,
             createdAt: new Date(),
         });
