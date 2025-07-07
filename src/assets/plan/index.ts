@@ -1,0 +1,1 @@
+export { default as icon1} from './icon-itinerary.webp'

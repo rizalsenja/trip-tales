@@ -1,6 +1,8 @@
 import styles from "./Plan.module.scss";
 import Button from "../ui/Button.tsx/Button";
-import icon1 from '../../assets/plan/icon-itinerary.webp'
+import { icon1 } from "../../assets/plan";
+
+// import icon1 from '../../assets/plan/icon-itinerary.webp'
 import icon2 from '../../assets/plan/icon-distances.webp'
 import icon3 from '../../assets/plan/icon-destination.webp'
 import bgImgPhone1 from '../../assets/plan/bg-img-phone-1.webp'
