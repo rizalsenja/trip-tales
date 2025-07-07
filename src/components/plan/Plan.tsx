@@ -13,6 +13,16 @@ import imgDs1 from '../../assets/plan/img-ds-1.webp'
 import imgDs2 from '../../assets/plan/img-ds-2.webp'
 import imgDs3 from '../../assets/plan/img-ds-3.webp'
 import imgDs4 from '../../assets/plan/img-ds-4.webp'
+import frame2 from '../../assets/plan/frame-2.webp'
+import frame3 from '../../assets/plan/frame-3.webp'
+import frame4 from '../../assets/plan/frame-4.webp'
+import imgStar from '../../assets/plan/star.webp'
+import imgText2 from '../../assets/plan/text-2.webp'
+import imgText3 from '../../assets/plan/text-3.webp'
+import imgText4 from '../../assets/plan/text-4.webp'
+import icon4 from '../../assets/plan/icon-4.webp'
+import iconSearch from '../../assets/plan/icon-search.webp'
+import iconMap from '../../assets/plan/map.webp'
 
 const planItems = [
     {
@@ -90,7 +100,7 @@ const Plan = () => {
             <div className={styles.plan__block2}>
                 <div className={styles.plan__image2}>
                     <img
-                        src="src/assets/plan/frame-2.webp"
+                        src={frame2}
                         alt="Find next adventure"
                         className={styles.plan__frame2}
                     />
@@ -108,17 +118,17 @@ const Plan = () => {
                             className={styles.plan__phoneBg2}
                         />
                         <img
-                            src="src/assets/plan/icon-search.webp"
+                            src={iconSearch}
                             alt="Search Icon"
                             className={styles.plan__iconSearch}
                         />
                         <img
-                            src="src/assets/plan/text-2.webp"
+                            src={imgText2}
                             alt="Text Overlay"
                             className={styles.plan__text2}
                         />
                         <img
-                            src="src/assets/plan/map.webp"
+                            src={iconMap}
                             alt="Map Graphic"
                             className={styles.plan__map}
                         />
@@ -149,14 +159,14 @@ const Plan = () => {
                     <img src={bgImgPhone3} alt="Share with others" className={styles.plan__phoneBg3} />
                     <div className={styles.plan__group3}>
 
-                           <img
+                        <img
                             src={imgDs3}
                             alt="Phone background"
                             className={styles.plan__background3}
                         />
-                        <img src="src/assets/plan/frame-3.webp" alt="frame" className={styles.plan__frame3} />
-                        <img src="src/assets/plan/star.webp" alt="star" className={styles.plan__star} />
-                        <img src="src/assets/plan/text-3.webp" alt="text" className={styles.plan__text3} />
+                        <img src={frame3} alt="frame" className={styles.plan__frame3} />
+                        <img src={imgStar} alt="star" className={styles.plan__star} />
+                        <img src={imgText3} alt="text" className={styles.plan__text3} />
                     </div>
 
                 </div>
@@ -194,9 +204,9 @@ const Plan = () => {
                             alt="Phone background"
                             className={styles.plan__background4}
                         />
-                        <img src="src/assets/plan/frame-4.webp" alt="frame-4" className={styles.plan__frame4} />
-                        <img src="src/assets/plan/icon-4.webp" alt="Reuse plan" className={styles.plan__icon4} />
-                        <img src="src/assets/plan/text-4.webp" alt="text-4" className={styles.plan__text4} />
+                        <img src={frame4} alt="frame-4" className={styles.plan__frame4} />
+                        <img src={icon4} alt="Reuse plan" className={styles.plan__icon4} />
+                        <img src={imgText4} alt="text-4" className={styles.plan__text4} />
                     </div>
 
                 </div>
