@@ -132,7 +132,7 @@ const NewsletterAdmin = () => {
 
 	return (
 		<section className='admin'>
-			<h1 className='admin__heading'>All Signup Newsletter Data</h1>
+			<h1 className='admin__heading'>Landing Page Signups</h1>
 			<table className='admin__table'>
 				<thead className='admin__table-header'>
 					<tr>
