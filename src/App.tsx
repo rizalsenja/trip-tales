@@ -18,8 +18,13 @@ function App() {
       {(!isAdmin && !isLoginAdmin) && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/admin" element={<Admin />} />
         <Route path="/login" element={<Login />} />
+        <Route
+            path='/admin'
+            element={
+                <Admin />
+            }
+          />
       </Routes>
       {/* <Footer /> */}
       {(!isAdmin && !isLoginAdmin) && <Footer />}
