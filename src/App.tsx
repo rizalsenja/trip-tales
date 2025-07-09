@@ -5,6 +5,7 @@ import Home from './pages/Home/Home';
 import Footer from './components/footer/Footer';
 import Admin from './pages/Admin/Admin';
 import Login from './pages/LoginAdmin'
+import ToastProvider from './components/ui/Toast/ToastProvider';
 // import './App.css'
 
 function App() {
@@ -16,6 +17,9 @@ function App() {
     <React.Fragment>
       {/* <Navbar /> */}
       {(!isAdmin && !isLoginAdmin) && <Navbar />}
+      <ToastProvider />
+      {!isAdmin && <Navbar />}
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />

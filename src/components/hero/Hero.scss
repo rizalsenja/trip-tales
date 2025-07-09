@@ -110,6 +110,7 @@
             margin-top: 80px;
         }
 
+
         &Title {
             font-style: normal;
             font-weight: 600;
@@ -118,6 +119,14 @@
             text-align: center;
             letter-spacing: -0.02em;
             color: $grey-950;
+        }
+
+        
+        &__container{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            
         }
 
         &__input {
@@ -131,6 +140,11 @@
                 gap: 16px;
             }
         }
+        &__titleSuccess {
+            text-align: center;
+            padding: 140px 16px;
+          
+          }
     }
 
     &__field {
@@ -202,7 +216,12 @@
                 cursor: pointer;
             }
         }
+
+       
     }
+
+   
+      
 }
 
 @include respond(lg) {
@@ -272,7 +291,9 @@
                 font-size: 24px;
                 line-height: 32px;
             }
-
+            &__container{
+                gap: 16px;   
+            }
             &__input {
                 flex-direction: row;
                 gap: 16px;
@@ -283,8 +304,14 @@
                     flex-direction: row;
                 }
             }
+
+            &__titleSuccess {
+                padding: 30px 16px;
+            
+            }
+        
         }
-    
+ 
         &__field {
             width: 200px;
 

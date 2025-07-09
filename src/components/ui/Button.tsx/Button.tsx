@@ -8,6 +8,7 @@ interface ButtonProps {
 	size?: 'xl' | 'md' | 'sm';
 	color?: 'primary' | 'secondary' | 'red';
 	disabled?: boolean;
+	isLoading?: boolean;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -17,10 +18,18 @@ const Button: React.FC<ButtonProps> = ({
 	size = 'md',
 	color = 'primary',
 	disabled = false,
+	isLoading = false,
 }) => {
 	return (
-		<button className={`${styles.button} ${styles[variant]} ${styles[size]} ${styles[color]} ${className}`} disabled={disabled}>
-        {label}
+		<button
+			className={`${styles.button} ${styles[variant]} ${styles[size]} ${styles[color]} ${className}`}
+			disabled={disabled || isLoading}
+		>
+			{isLoading ? (
+				<span className={styles.loader}></span>
+			) : (
+				label
+			)}
 		</button>
 	);
 };

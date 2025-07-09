@@ -5,8 +5,8 @@ import {
 	query,
 	orderBy,
 	Timestamp,
-	// doc,
-  // deleteDoc,
+	doc,
+  deleteDoc,
 } from 'firebase/firestore';
 import { db } from '../../../firebase.config';
 import './SignupsNewsletter.scss';
@@ -101,16 +101,16 @@ const NewsletterAdmin = () => {
 		);
 	};
 
-	// const handleDelete = async (id: string) => {
-	// 	const ok = window.confirm('Delete this entry?');
-	// 	if (!ok) return;
+	const handleDelete = async (id: string) => {
+		const ok = window.confirm('Delete this entry?');
+		if (!ok) return;
 
-	// 	try {
-	// 		await deleteDoc(doc(db, 'signup-newsletter', id));
-	// 	} catch (err) {
-	// 		console.error('Failed to delete:', err);
-	// 	}
-	// };
+		try {
+			await deleteDoc(doc(db, 'signup-newsletter', id));
+		} catch (err) {
+			console.error('Failed to delete:', err);
+		}
+	};
 
 	useEffect(() => {
 		const queryFirebase = query(
@@ -142,7 +142,7 @@ const NewsletterAdmin = () => {
 						<th>Email</th>
 						<th>Feedback</th>
 						<th>Signed Up At</th>
-						{/* <th>Actions</th> */}
+						<th>Actions</th>
 					</tr>
 				</thead>
 
@@ -162,14 +162,14 @@ const NewsletterAdmin = () => {
 							<td>{entry.email}</td>
 							<td>{entry.feedback ? 'Yes' : 'No'}</td>
 							<td>{entry.createdAt?.toDate().toLocaleString()}</td>
-							{/* <td>
+							<td>
 								<button
 									className='button__delete'
 									onClick={() => handleDelete(entry.id)}
 								>
 									Delete
 								</button>
-							</td> */}
+							</td>
 						</tr>
 					))}
 				</tbody>
