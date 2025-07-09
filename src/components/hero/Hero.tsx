@@ -176,8 +176,8 @@ const Hero = () => {
             </>
           ) : (
             <h2 className="hero__formTitle">
-              Welcome to the TripTales! <br />
-              You’ll be the first to know once the journey begins.
+              Welcome to TripTales! <br />
+              You'll be the first to know once the journey begins.
             </h2>
           )}
         </div>
