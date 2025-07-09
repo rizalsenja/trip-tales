@@ -1,6 +1,6 @@
 import { useState, type JSX } from "react";
 import styles from "./Faq.module.scss";
-import Button from "../ui/Button.tsx/Button";
+import Button from "../ui/Button/Button";
 import iconArrow from '../../assets/faq/arrow.webp'
 
 // Define type for FAQ entry

@@ -4,7 +4,7 @@ import item1 from "../../assets/ultimate/ultimate-1.webp";
 import item2 from "../../assets/ultimate/ultimate-2.webp";
 import item3 from "../../assets/ultimate/ultimate-3.webp";
 import item4 from "../../assets/ultimate/ultimate-4.webp";
-import Button from "../ui/Button.tsx/Button";
+import Button from "../ui/Button/Button";
 
 const features = [
     {

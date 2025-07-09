@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Hero.scss';
 import heroImg from '../../assets/img/hero-img2.webp';
-import Button from '../ui/Button.tsx/Button';
+import Button from '../ui/Button/Button';
 import { db } from '../../firebase.config';
 import { collection, addDoc } from 'firebase/firestore';
 import { toast } from 'react-hot-toast';

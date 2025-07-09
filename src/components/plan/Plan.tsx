@@ -1,5 +1,5 @@
 import styles from "./Plan.module.scss";
-import Button from "../ui/Button.tsx/Button";
+import Button from "../ui/Button/Button";
 import {
     icon1, icon2, icon3,
     bgImgPhone1, bgImgPhone2, bgImgPhone3, bgImgPhone4,
