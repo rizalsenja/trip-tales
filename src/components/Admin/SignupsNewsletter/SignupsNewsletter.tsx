@@ -10,6 +10,9 @@ import {
 } from 'firebase/firestore';
 import { db } from '../../../firebase.config';
 import './SignupsNewsletter.scss';
+import { signOut } from 'firebase/auth';
+import { auth } from '../../../firebase.config';
+import { useNavigate } from 'react-router-dom';
 
 type NewsletterEntry = {
 	id: string;
@@ -21,6 +24,8 @@ type NewsletterEntry = {
 };
 
 const NewsletterAdmin = () => {
+	const navigate = useNavigate();
+
 	const [entries, setEntries] = useState<NewsletterEntry[]>([]);
 
 	const formatDateTime = (date: Date) => {
@@ -112,6 +117,15 @@ const NewsletterAdmin = () => {
 		}
 	};
 
+	const handleLogout = async () => {
+		try {
+			await signOut(auth);
+			navigate('/login', { replace: true });
+		} catch (err) {
+			console.error('Failed to logout:', err);
+		}
+	};
+
 	useEffect(() => {
 		const queryFirebase = query(
 			collection(db, 'signup-newsletter'),
@@ -175,21 +189,27 @@ const NewsletterAdmin = () => {
 				</tbody>
 			</table>
 
-			<div className='admin__buttons'>
-				<button
-					className='button__csv'
-					onClick={handleDownloadCSV}
-					disabled={!entries}
-				>
-					Download CSV
-				</button>
+			<div className='buttons'>
+				<div className='admin__buttons'>
+					<button
+						className='button__csv'
+						onClick={handleDownloadCSV}
+						disabled={!entries}
+					>
+						Download CSV
+					</button>
 
-				<button
-					className='button__json'
-					onClick={handleDownloadJSON}
-					disabled={!entries}
-				>
-					Download JSON
+					<button
+						className='button__json'
+						onClick={handleDownloadJSON}
+						disabled={!entries}
+					>
+						Download JSON
+					</button>
+				</div>
+
+				<button className='button__logout' onClick={handleLogout}>
+					Logout
 				</button>
 			</div>
 		</section>

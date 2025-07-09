@@ -54,9 +54,30 @@
     transition: background-color 0.3s;
   }
 
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .button__logout {
+    background-color: $red-700;
+    color: $white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $red-800;
+    }
+  }
+
   &__buttons {
     display: flex;
-    margin-top: 20px;
+    align-items: center;
     gap: 10px;
 
 
