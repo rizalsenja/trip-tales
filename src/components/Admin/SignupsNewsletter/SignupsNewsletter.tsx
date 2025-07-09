@@ -5,8 +5,8 @@ import {
 	query,
 	orderBy,
 	Timestamp,
-	doc,
-  deleteDoc,
+	// doc,
+  // deleteDoc,
 } from 'firebase/firestore';
 import { db } from '../../../firebase.config';
 import './SignupsNewsletter.scss';
