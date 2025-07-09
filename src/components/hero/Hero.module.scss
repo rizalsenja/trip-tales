@@ -437,5 +437,62 @@
                 }
             }
         }
+
+        &__autocomplete {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: white;
+            border: 1px solid #d0d5dd;
+            border-radius: 12px;
+            max-height: 200px;
+            overflow-y: auto;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+          
+            &__item {
+              padding: 10px 16px;
+              font-size: 14px;
+              cursor: pointer;
+          
+              &:hover {
+                background-color: #f5f5f5;
+              }
+            }
+          }
+
+
+          &__field__wrapper {
+            position: relative;
+          }
+          
+          &__field__input {
+            appearance: none;
+            width: 100%;
+            padding: 12px 14px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background: #fff;
+            color: #333;
+            cursor: pointer;
+          
+            &::-webkit-calendar-picker-indicator {
+              filter: invert(0.4);
+              cursor: pointer;
+              margin-left: -4px;
+            }
+          
+            &:hover {
+              border-color: #9f312e;
+            }
+          
+            &:focus {
+              outline: none;
+              border-color: #9f312e;
+              box-shadow: 0 0 0 3px rgba(159, 49, 46, 0.1);
+            }
+          }
     }
 }
