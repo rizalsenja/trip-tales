@@ -15,9 +15,8 @@ function App() {
 
   return (
     <React.Fragment>
-      {/* <Navbar /> */}
-      <ToastProvider />
       {!hideFrame && <Navbar />}
+      <ToastProvider />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
@@ -30,7 +29,6 @@ function App() {
             }
           />
       </Routes>
-      {/* <Footer /> */}
       {!hideFrame && <Footer />}
     </React.Fragment>
   )
