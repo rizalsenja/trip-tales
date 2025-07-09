@@ -3,15 +3,20 @@ import { useState } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../firebase.config';
 import { FirebaseError } from 'firebase/app';
+import { useAuth } from '../../hook/useAuth';
+import { Navigate } from 'react-router-dom';
+// import mainLogo from '../../assets/icons/main-logo.webp'
 
 const LoginAdmin = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const { user, loading } = useAuth();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError('');
+
     try {
       await signInWithEmailAndPassword(auth, email, password);
     } catch (e) {
@@ -19,6 +24,8 @@ const LoginAdmin = () => {
       setError(firebaseError.message || 'Login failed');
     }
   };
+
+  if (!loading && user) return <Navigate to="/admin" replace />;
 
   return (
     <section className="login-admin">
@@ -33,6 +40,7 @@ const LoginAdmin = () => {
             className="login-input"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required
           />
           <input
             type="password"
@@ -40,6 +48,7 @@ const LoginAdmin = () => {
             className="login-input"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            required
           />
 
           {error && <p className="login-error">{error}</p>}
