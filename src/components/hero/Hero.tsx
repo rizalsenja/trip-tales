@@ -5,7 +5,7 @@ import Button from '../ui/Button.tsx/Button';
 import { db } from '../../firebase.config';
 import { collection, addDoc } from 'firebase/firestore';
 import { toast } from 'react-hot-toast';
-import CountryAutoComplete from '../Home/CountryAutoComplete/CountryAutocomplete'
+import CountryAutoComplete from '../Home/CountryInput/CountryAutoComplete';
 
 type ToastType = 'success' | 'error' | 'validation';
 
