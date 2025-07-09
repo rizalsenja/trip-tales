@@ -6,32 +6,32 @@ import Footer from './components/footer/Footer';
 import Admin from './pages/Admin/Admin';
 import Login from './pages/LoginAdmin'
 import ToastProvider from './components/ui/Toast/ToastProvider';
-// import './App.css'
+import RequireAuth from './components/RequireAuth/RequireAuth';
 
 function App() {
   const { pathname } = useLocation();
-  const isAdmin = pathname.startsWith('/admin');
-  const isLoginAdmin = pathname.startsWith('/login');
+  const hideFrame =
+    pathname.startsWith('/admin') || pathname.startsWith('/login');
 
   return (
     <React.Fragment>
       {/* <Navbar /> */}
-      {(!isAdmin && !isLoginAdmin) && <Navbar />}
       <ToastProvider />
-      {!isAdmin && <Navbar />}
-
+      {!hideFrame && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route
             path='/admin'
             element={
+              <RequireAuth>
                 <Admin />
+              </RequireAuth>
             }
           />
       </Routes>
       {/* <Footer /> */}
-      {(!isAdmin && !isLoginAdmin) && <Footer />}
+      {!hideFrame && <Footer />}
     </React.Fragment>
   )
 }
