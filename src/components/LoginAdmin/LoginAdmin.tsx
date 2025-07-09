@@ -2,6 +2,7 @@ import './LoginAdmin.scss';
 import { useState } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../firebase.config';
+import { FirebaseError } from 'firebase/app';
 
 const LoginAdmin = () => {
   const [email, setEmail] = useState('');
@@ -13,10 +14,9 @@ const LoginAdmin = () => {
     setError('');
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      // Tidak perlu navigate() di sini.
-      // Redirect otomatis akan terjadi lewat <Navigate /> di bawah.
-    } catch (e: any) {
-      setError(e.message || 'Login failed');
+    } catch (e) {
+      const firebaseError = e as FirebaseError;
+      setError(firebaseError.message || 'Login failed');
     }
   };
 
