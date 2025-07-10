@@ -1,9 +1,9 @@
 import './LoginAdmin.scss';
 import { useState } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../../firebase.config';
+import { auth } from '../../../firebase.config';
 import { FirebaseError } from 'firebase/app';
-import { useAuth } from '../../hook/useAuth';
+import { useAuth } from '../../../hook/useAuth';
 import { Navigate } from 'react-router-dom';
 // import mainLogo from '../../assets/icons/main-logo.webp'
 
