@@ -1,25 +1,25 @@
 import styles from "./Ultimate.module.scss";
-import { item1, item2, item3, item4 } from "../../../assets/img/ultimate";
+import { ultimate1, ultimate2, ultimate3, ultimate4 } from "../../../assets/img/ultimate";
 import Button from "../../ui/Button/Button";
 
 const features = [
     {
-        icon: item1,
+        icon: ultimate1,
         title: "Trip Planner",
         desc: "Plan trips with flights, hotels, activities & collaborators",
     },
     {
-        icon: item2,
+        icon: ultimate2,
         title: "Destination Discovery",
         desc: "Explore destinations by season, budget, time & vibe",
     },
     {
-        icon: item3,
+        icon: ultimate3,
         title: "Social Sharing",
         desc: "Post your trip stories & see others’ real experiences",
     },
     {
-        icon: item4,
+        icon: ultimate4,
         title: "Save & Reuse Plans",
         desc: "Post your trip stories & see others’ real experiences",
     },
