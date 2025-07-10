@@ -1,5 +1,5 @@
 import styles from "./Plan.module.scss";
-import Button from "../ui/Button/Button";
+import Button from "../../ui/Button/Button";
 import {
     icon1, icon2, icon3,
     bgImgPhone1, bgImgPhone2, bgImgPhone3, bgImgPhone4,
@@ -8,7 +8,7 @@ import {
     frame2, frame3, frame4, 
     imgStar, imgText2, imgText3, imgText4,
     icon4, iconSearch, iconMap,
-} from "../../assets/plan";
+} from "../../../assets/plan";
 
 const planItems = [
     {
