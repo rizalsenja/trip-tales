@@ -1,18 +1,20 @@
 import styles from './Footer.module.scss';
-import logo from '../../../assets/icons/main-logo.webp'
-import appStoreLogo from '../../../assets/icons/app_store-logo.webp';
-import googlePlayLogo from '../../../assets/icons/google_play-logo.webp';
-import facebookLogo from '../../../assets/icons/facebook-logo.webp';
-import instagramLogo from '../../../assets/icons/instagram-logo.webp';
-import tiktokLogo from '../../../assets/icons/tiktok-logo.webp';
-import xLogo from '../../../assets/icons/x-logo.webp';
-import youtubeLogo from '../../../assets/icons/youtube-logo.webp';
+import {
+    mainLogo,
+    appStoreLogo,
+    googlePlayLogo,
+    facebookLogo,
+    instagramLogo,
+    tiktokLogo,
+    xLogo,
+    youtubeLogo
+} from '../../../assets/icons'
 
 const Footer = () => {
     return (
         <footer className={styles.footer}>
             <div className={styles.footer__top}>
-                <img src={logo} alt="Trip Tales Logo" className={styles.footer__logo} />
+                <img src={mainLogo} alt="Trip Tales Logo" className={styles.footer__logo} />
 
                 <div className={styles.footer__grid}>
                     <div className={`${styles.footer__grid} ${styles['footer__grid--left']}`}>
