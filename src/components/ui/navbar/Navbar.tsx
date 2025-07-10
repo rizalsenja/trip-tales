@@ -3,7 +3,8 @@ import { NavLink } from 'react-router-dom';
 import logo from '../../../assets/icons/main-logo.webp'
 import styles from './Navbar.module.scss';
 import Button from '../Button/Button';
-import hamburgerIcon from '../../../assets/icons/hamburger-icons.webp'
+// import hamburgerIcon from '../../../assets/icons/hamburger-icons.webp'
+import { hamburgerIcon } from '../../../assets/icons';
 
 
 const links = [
