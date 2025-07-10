@@ -1,0 +1,1 @@
+export { default as iconLike } from './icons_like.webp'

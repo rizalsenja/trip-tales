@@ -1,10 +1,9 @@
 import { useRef } from "react";
 import styles from "./About.module.scss";
-import Button from "../ui/Button/Button";
-
+import Button from "../../ui/Button/Button";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
-import iconLike from '../../assets/about/icons_like.webp'
+import { iconLike } from '../../../assets/img/about'
 
 
 // Define the type
