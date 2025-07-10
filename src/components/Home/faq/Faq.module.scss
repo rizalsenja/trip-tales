@@ -2,14 +2,14 @@
 .faq {
     padding: 60px 20px;
     text-align: center;
-    background-image: url("../../assets/faq/bg-phone.webp");
+    background-image: url("../../../assets/img/faq/bg-phone.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
   
 
     @media (min-width: 1024px) {
-      background-image: url("../../assets/faq/bg-dekstop.webp");
+      background-image: url("../../../assets/img/faq/bg-dekstop.webp");
       padding: 6rem 2rem;
     }
   
