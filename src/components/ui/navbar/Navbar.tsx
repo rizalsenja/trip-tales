@@ -1,11 +1,8 @@
 import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../../../assets/icons/main-logo.webp'
-import styles from './Navbar.module.scss';
+import { hamburgerIcon, mainLogo } from '../../../assets/icons';
 import Button from '../Button/Button';
-// import hamburgerIcon from '../../../assets/icons/hamburger-icons.webp'
-import { hamburgerIcon } from '../../../assets/icons';
-
+import styles from './Navbar.module.scss';
 
 const links = [
     { id: 1, url: '#', text: 'Explore' },
@@ -30,7 +27,7 @@ const Navbar = () => {
         <nav className={`${styles.navbar} ${scrolled ? styles['navbar--scrolled'] : ''}`}>
             <div className={styles.navbar__container}>
                 <div className={styles.navbar__logo}>
-                    <img src={logo} alt="Trip Tales Logo" />
+                    <img src={mainLogo} alt="Trip Tales Logo" />
                 </div>
 
                 <ul className={styles.navbar__links}>
