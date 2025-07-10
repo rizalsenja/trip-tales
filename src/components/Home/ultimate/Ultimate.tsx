@@ -1,10 +1,6 @@
 import styles from "./Ultimate.module.scss";
-
-import item1 from "../../assets/ultimate/ultimate-1.webp";
-import item2 from "../../assets/ultimate/ultimate-2.webp";
-import item3 from "../../assets/ultimate/ultimate-3.webp";
-import item4 from "../../assets/ultimate/ultimate-4.webp";
-import Button from "../ui/Button/Button";
+import { item1, item2, item3, item4 } from "../../../assets/img/ultimate";
+import Button from "../../ui/Button/Button";
 
 const features = [
     {
