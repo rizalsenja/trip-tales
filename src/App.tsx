@@ -6,7 +6,7 @@ import Footer from './components/ui/footer/Footer';
 import Admin from './pages/Admin/Admin';
 import Login from './pages/LoginAdmin'
 import ToastProvider from './components/ui/Toast/ToastProvider';
-import RequireAuth from './components/RequireAuth/RequireAuth';
+import RequireAuth from './components/Admin/RequireAuth/RequireAuth';
 
 function App() {
   const { pathname } = useLocation();
