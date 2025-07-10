@@ -1,0 +1,1 @@
+export { default as iconArrow} from './arrow.webp'
