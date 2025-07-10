@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import './Hero.scss';
-import { heroImg } from '../../assets/img/hero';
-import Button from '../ui/Button/Button';
-import { db } from '../../firebase.config';
+import { heroImg } from '../../../assets/img/hero';
+import Button from '../../ui/Button/Button';
+import { db } from '../../../firebase.config';
 import { collection, addDoc } from 'firebase/firestore';
 import { toast } from 'react-hot-toast';
-import CountryAutoComplete from '../Home/CountryInput/CountryAutoComplete';
+import CountryAutoComplete from '../CountryInput/CountryAutoComplete';
 
 type ToastType = 'success' | 'error' | 'validation';
 

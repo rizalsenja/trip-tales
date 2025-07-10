@@ -1,6 +1,6 @@
 import Ultimate from '../../components/ultimate/Ultimate';
 import About from '../../components/about/About';
-import Hero from '../../components/hero/Hero';
+import Hero from '../../components/Home/hero/Hero';
 import Faq from '../../components/faq/Faq';
 import Plan from '../../components/plan/Plan';
 
