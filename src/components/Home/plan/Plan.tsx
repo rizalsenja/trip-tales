@@ -8,7 +8,7 @@ import {
     frame2, frame3, frame4, 
     imgStar, imgText2, imgText3, imgText4,
     icon4, iconSearch, iconMap,
-} from "../../../assets/plan";
+} from "../../../assets/img/plan";
 
 const planItems = [
     {
