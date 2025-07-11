@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { hamburgerIcon, mainLogo } from '../../../assets/icons';
-import Button from '../Button/Button';
+// import Button from '../Button/Button';
 import styles from './Navbar.module.scss';
 
 const links = [
@@ -33,7 +33,7 @@ const Navbar = () => {
                 <ul className={styles.navbar__links}>
                     {links.map(link => (
                         <li key={link.id}>
-                            <NavLink to={link.url}> {/* className={({ isActive }) => (isActive ? 'active' : '')} */}
+                            <NavLink to={link.url}>
                                 {link.text}
                             </NavLink>
                         </li>
@@ -41,8 +41,8 @@ const Navbar = () => {
                 </ul>
 
                 <div className={styles.navbar__buttons}>
-                    <Button label='Sign Up' size='xl' variant='filled' color='secondary' />
-                    <Button label='Log In' size='xl' variant='filled' color='primary' />
+                    {/* <Button label='Sign Up' size='xl' variant='filled' color='secondary' />
+                    <Button label='Log In' size='xl' variant='filled' color='primary' /> */}
                 </div>
 
                 {/* Hamburger menu */}
@@ -77,8 +77,8 @@ const Navbar = () => {
                             ))}
                         </ul>
                         <div className={styles.navbar__overlayButtons}>
-                            <Button label='Sign Up' size='xl' variant='filled' color='secondary' />
-                            <Button label='Log In' size='xl' variant='filled' color='primary' />
+                            {/* <Button label='Sign Up' size='xl' variant='filled' color='secondary' />
+                            <Button label='Log In' size='xl' variant='filled' color='primary' /> */}
                         </div>
                     </div>
                 </div>
