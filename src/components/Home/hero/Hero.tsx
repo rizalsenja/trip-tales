@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './Hero.scss';
 import { heroImg } from '../../../assets/img/hero';
 import Button from '../../ui/Button/Button';
@@ -6,6 +6,10 @@ import { db } from '../../../firebase.config';
 import { collection, addDoc } from 'firebase/firestore';
 import { toast } from 'react-hot-toast';
 import CountryAutoComplete from '../CountryInput/CountryAutoComplete';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 type ToastType = 'success' | 'error' | 'validation';
 
@@ -44,6 +48,7 @@ const Hero = () => {
 
 	const [isSubmitted, setIsSubmitted] = useState(false);
 	const [isLoading, setIsLoading] = useState(false); // track loading
+	const bgImgRef = useRef<HTMLImageElement | null>(null);
 
 	const showToast = (type: ToastType) => {
 		const config = TOAST[type];
@@ -93,10 +98,25 @@ const Hero = () => {
 		}
 	};
 
+	useEffect(() => {
+		if (!bgImgRef.current) return;
+	
+		gsap.to(bgImgRef.current, {
+			y: 900,
+			ease: 'none',
+			scrollTrigger: {
+				trigger: '.hero',
+				start: 'top top',
+				end: 'bottom top',
+				scrub: true,
+			},
+		});
+	}, []);
+
 	return (
 		<section className='hero'>
 			<div className='hero__bg__img__container'>
-				<img src={heroImg} alt='Hero Image' className='hero__bg__img' />
+				<img ref={bgImgRef} src={heroImg} alt='Hero Image' className='hero__bg__img' />
 			</div>
 
 			<div className='hero__top'>
