@@ -67,6 +67,8 @@
         top: 34px;
         z-index: 0;
         object-fit: cover;
+        width: 489.67px;
+        height: 601.98px;
     }
 
 
@@ -286,6 +288,9 @@
         position: relative;
         left: -14.32px;
         top: 0px;
+        width: 537.31px;
+        height: 598.43px;
+
     }
 
     &__phoneBg2 {
@@ -293,6 +298,9 @@
         top: 73px;
         left: -15px;
         z-index: 1;
+        width: 350px;
+        height: 460px;
+
     }
 
     &__iconSearch {
@@ -324,7 +332,8 @@
         position: relative;
         top: 0px;
         left: 23.68px;
-
+        width: 475.1px;
+        height: 585.16px;
     }
 
     &__image3 {
@@ -340,6 +349,9 @@
         top: 81px;
         left: -17px;
         z-index: 2;
+        width: 350px;
+        height: 460px;
+
     }
 
     &__star {
@@ -371,6 +383,8 @@
         top: 0px;
         left: -6.32px;
         z-index: 0;
+        width: 544.03px;
+        height: 528.22px;
     }
 
     &__frame4 {
@@ -378,6 +392,8 @@
         top: 76px;
         left: -15px;
         z-index: 2;
+        width: 350px;
+        height: 452px;
     }
 
     &__icon4 {
@@ -449,15 +465,18 @@
 
         &__background {
             width: 100%;
+            height: 100%;
         }
 
         &__frame2 {
             width: 100%;
+            height: 100%;
             left: 0px;
         }
 
         &__phoneBg3 {
             width: 100%;
+            height: 100%;
             left: 0px;
 
         }
@@ -469,6 +488,7 @@
 
         &__phoneBg4 {
             width: 100%;
+            height: 100%;
             left: 0px;
         }
 
@@ -717,25 +737,28 @@
         }
 
         &__background1 {
-            width: auto;
-            height: auto;
             top: 16px;
             left: 65px;
-
+            width: 517.5578002929688px;
+            height: 630px;
         }
 
         &__background2 {
+            width: 515px;
+            height: 549px;
             display: block;
-
         }
 
         &__background3 {
+            width: 503px;
+            height: 587px;
             display: block;
-
         }
 
         &__background4 {
             display: block;
+            width: 559px;
+            height: 626px;
         }
 
         &__phoneBg2 {
