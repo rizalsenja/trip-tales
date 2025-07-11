@@ -133,7 +133,7 @@ const Plan = () => {
                         From iconic landmarks to hidden gems, uncover new places through reviews, images, and real traveler tips.
                     </p>
                     <div className={styles.plan__btns}>
-                        <Button label="Discover More" size="xl" variant="filled" color="primary" />
+                        {/* <Button label="Discover More" size="xl" variant="filled" color="primary" /> */}
                     </div>
 
                 </div>
@@ -206,7 +206,7 @@ const Plan = () => {
                         previous plans with just a few taps—perfect for repeat visits or building new trips faster.
                     </p>
                     <div className={styles.plan__btns}>
-                        <Button label="Discover" size="xl" variant="filled" color="primary" />
+                        {/* <Button label="Discover" size="xl" variant="filled" color="primary" /> */}
                     </div>
 
                 </div>
