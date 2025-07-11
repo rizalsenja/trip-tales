@@ -1,14 +1,15 @@
 import styles from './Footer.module.scss';
 import {
     mainLogo,
-    appStoreLogo,
-    googlePlayLogo,
-    facebookLogo,
-    instagramLogo,
-    tiktokLogo,
-    xLogo,
-    youtubeLogo
+    // appStoreLogo,
+    // googlePlayLogo,
+    // facebookLogo,
+    // instagramLogo,
+    // tiktokLogo,
+    // xLogo,
+    // youtubeLogo
 } from '../../../assets/icons'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -20,49 +21,49 @@ const Footer = () => {
                     <div className={`${styles.footer__grid} ${styles['footer__grid--left']}`}>
                         {/* SOCIAL */}
                         <div className={styles.footer__section}>
-                            <h2 className={`${styles['footer__section--title']}`}>Social</h2>
+                            {/* <h2 className={`${styles['footer__section--title']}`}>Social</h2> */}
                             <div className={`${styles['footer__section--content']} ${styles['footer__section--content--large-gap']}`}>
-                                <div className={styles['footer__section--listLink']}>
-                                    <p className={styles['footer__section--link']}>Feed</p>
-                                    <p className={styles['footer__section--link']}>Explore</p>
-                                </div>
+                                {/* <div className={styles['footer__section--listLink']}>
+                                    <Link to={'/'} className={styles['footer__section--link']}>Feed</Link>
+                                    <Link to={'/'} className={styles['footer__section--link']}>Explore</Link>
+                                </div> */}
 
                                 <p className={styles['footer__section--address']}>TripTales ApS CVR: 45515044 Jacobsens Alle 5, 2900 Hellerup, Denmark</p>
                             </div>
                         </div>
 
                         {/* BOOKING */}
-                        <div className={styles.footer__section}>
+                        {/* <div className={styles.footer__section}>
                             <h2 className={`${styles['footer__section--title']}`}>Booking</h2>
                             <div className={styles['footer__section--content']}>
-                                <p className={styles['footer__section--link']}>Flight</p>
-                                <p className={styles['footer__section--link']}>Train</p>
-                                <p className={styles['footer__section--link']}>Bus</p>
-                                <p className={styles['footer__section--link']}>Car Rental</p>
-                                <p className={styles['footer__section--link']}>To Do's</p>
+                                <Link to={'/'} className={styles['footer__section--link']}>Flight</Link>
+                                <Link to={'/'} className={styles['footer__section--link']}>Train</Link>
+                                <Link to={'/'} className={styles['footer__section--link']}>Bus</Link>
+                                <Link to={'/'} className={styles['footer__section--link']}>Car Rental</Link>
+                                <Link to={'/'} className={styles['footer__section--link']}>To Do's</Link>
                             </div>
-                        </div>
+                        </div> */}
 
                         {/* ACCOUNT */}
-                        <div className={styles.footer__section}>
+                        {/* <div className={styles.footer__section}>
                             <h2 className={`${styles['footer__section--title']}`}>Account</h2>
                             <div className={styles['footer__section--content']}>
-                                <p className={styles['footer__section--link']}>My Trips</p>
-                                <p className={styles['footer__section--link']}>Profile</p>
+                                <Link to={'/'} className={styles['footer__section--link']}>My Trips</Link>
+                                <Link to={'/'} className={styles['footer__section--link']}>Profile</Link>
                             </div>
-                        </div>
+                        </div> */}
 
                         {/* TRAVEL TOOL */}
-                        <div className={styles.footer__section}>
+                        {/* <div className={styles.footer__section}>
                             <h2 className={`${styles['footer__section--title']}`}>Travel Tool</h2>
                             <div className={styles['footer__section--content']}>
-                                <p className={styles['footer__section--link']}>Destination Finder</p>
-                                <p className={styles['footer__section--link']}>Feature X</p>
+                                <Link to={'/'} className={styles['footer__section--link']}>Destination Finder</Link>
+                                <Link to={'/'} className={styles['footer__section--link']}>Feature X</Link>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
 
-                    <div className={`${styles.footer__grid} ${styles['footer__grid--right']}`}>
+                    {/* <div className={`${styles.footer__grid} ${styles['footer__grid--right']}`}>
                         <div className={`${styles.footer__section} ${styles['footer__section--store']}`}>
                             <h2 className={styles['footer__section--title']}>Find Us</h2>
                             <div className={styles['footer__section--badges']}>
@@ -91,7 +92,7 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
@@ -99,8 +100,8 @@ const Footer = () => {
                 <h2 className={styles.footer__copyright}>Copyright &copy; 2025 TripTales. All right reserved</h2>
 
                 <div className={styles.footer__legal}>
-                    <p className={styles.footer__link}>Privacy Policy</p>
-                    <p className={styles.footer__link}>Terms &amp; Conditions</p>
+                    <Link to={'/'} className={styles.footer__link}>Privacy Policy</Link>
+                    <Link to={'/'} className={styles.footer__link}>Terms &amp; Conditions</Link>
                 </div>
             </div>
         </footer>
