@@ -1,7 +1,11 @@
-import { useState, type JSX } from "react";
+import { useState, useRef, useEffect, type JSX } from "react";
 import styles from "./Faq.module.scss";
 import Button from "../../ui/Button/Button";
 import { iconArrow } from '../../../assets/img/faq'
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 // Define type for FAQ entry
 type FaqItem = {
@@ -48,12 +52,52 @@ export default function Faq(): JSX.Element {
     const [activeTab, setActiveTab] = useState<TabCategory>("General");
     const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
+    const divButtonRef = useRef<HTMLDivElement | null>(null);
+    const titleRef = useRef<HTMLHeadingElement | null>(null);
+    const tabsRef = useRef<HTMLDivElement | null>(null);
+    const listRef = useRef<HTMLDivElement | null>(null);
+
+    useEffect(() => {
+        [
+            divButtonRef,
+            titleRef,
+            tabsRef,
+            listRef,
+        ].forEach((ref, i) => {
+            if (ref.current) {
+                gsap.fromTo(
+                    ref.current,
+                    { autoAlpha: 0, y: 40 },
+                    {
+                        autoAlpha: 1,
+                        y: 0,
+                        duration: 0.8,
+                        delay: i * 0.15,
+                        ease: "power2.out",
+                        scrollTrigger: {
+                            trigger: ref.current,
+                            start: "top 85%",
+                            toggleActions: "play none none reverse",
+                        },
+                    }
+                );
+            }
+        });
+
+        // Clean up triggers
+        return () => {
+            ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+        };
+    }, []);
+
     return (
         <section className={styles.faq}>
-            <Button label='FAQs' size='xl' variant='outline' color='primary' />
-            <h2 className={styles.faq__title}>Frequently Asked Question</h2>
+            <div ref={divButtonRef}>
+                <Button label='FAQs' size='xl' variant='outline' color='primary' />
+            </div>
+            <h2 className={styles.faq__title} ref={titleRef}>Frequently Asked Question</h2>
 
-            <div className={styles.faq__tabs}>
+            <div className={styles.faq__tabs} ref={tabsRef}>
                 {tabs.map((tab) => (
                     <button
                         key={tab}
@@ -69,7 +113,7 @@ export default function Faq(): JSX.Element {
                 ))}
             </div>
 
-            <div className={styles.faq__list}>
+            <div className={styles.faq__list} ref={listRef}>
                 {faqs[activeTab].map((faq, idx) => (
                     <div
                         key={idx}
